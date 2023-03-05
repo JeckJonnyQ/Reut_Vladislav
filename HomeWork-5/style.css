@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.privet{
+    background-color:rgb(126, 182, 228);
+    height: 40px;
+    text-align: center;
+    color: rgb(78, 8, 143);
+    vertical-align: middle;
+    line-height: 40px;
+}
+
+h1{
+    text-align: center;
+    line-height: 25px;
+    margin: 10px;
+}
+ul{
+    margin: 20px 40px 20px 40px;
+    list-style-type: disc;
+}
+
+
+.osnova{
+    background: url(images/Мяч.png) repeat-y right top;
+    background-color:rgb(255, 255, 255);
+    margin-left: 200px;
+    padding: 10px;
+}
+
+.glavnoe{
+    background-color:rgb(126, 182, 228);
+    color: rgb(78, 8, 143);
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+}

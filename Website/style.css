@@ -211,3 +211,85 @@ h2 span::before{
 .program_block2 ul li:last-child{
     margin-right: 0px;
 }
+
+/* Program_block3 */
+
+.program_block3 h2{
+    margin-top: 205px;
+    margin-left: 142px;
+    text-align: start;
+}
+.program_block3 p{
+    margin: 30px 0px 30px 142px;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.program_block3 li{
+    margin-left: 160px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.program_block3 ul li span{
+    position: relative;
+}
+.program_block3 ul span::before{
+    content: "";
+    background: url(images/ПоинтЛи.png);
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    top: 7px;
+    left: -17px;
+}
+.program_block3 ul li:last-child{
+    margin-bottom: 0px;
+}
+
+h2 span{
+    position: relative;
+}
+.program_block3 h2 span::before{
+    content: "";
+    background: url(images/Strelka.png);
+    position: absolute;
+    width: 262px;
+    height: 346px;
+    top: 0px;
+    left: -250px;
+}
+.program_block3 h2 span::after{
+    content: "";
+    background: url(images/GreenGirl.png) no-repeat;
+    position: absolute;
+    width: 750px;
+    height: 772px;
+    top: -75px;
+    right: -900px;
+}   
+
+/* program_curator */
+
+.program_curator h2{
+    margin-top: 320px;
+}
+.program_curator h2 span{
+    position: relative;
+}
+.program_curator h2 span::before{
+    content: "";
+    background: url(images/oval2.png) no-repeat;
+    position: absolute;
+    width: 522px;
+    height: 155px;
+    top: -30px;
+    left: -120px;
+}
+
+.curator{
+    display: flex;
+    margin-top: 23px;
+    margin-left: 323px;
+}

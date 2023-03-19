@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+.flex{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+p.star{
+    background: url(star0.png);
+    display: block;
+    width: 75px;
+    height: 78px;
+}
+p.star:hover,
+p.star:hover ~ p.star{
+    background: url(star1.png);
+}
+</style>
+
+<body>
+
+<div class="flex">
+<p class="star"></p>
+<p class="star"></p>
+<p class="star"></p>
+<p class="star"></p>
+<p class="star"></p>
+</div>
+
+    
+</body>
+</html>

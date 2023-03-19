@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKS_6A</title>
+</head>
+
+<style>
+    .pervui a{
+        color: green;
+        padding: 0px 10px 0px 10px;
+    }
+    .pervui a:hover{    
+        color: red;
+    }
+    .pervui a:nth-child(1){
+        border-right: solid;
+        border-color: red;
+    }
+    .pervui a:nth-child(2){
+        border-right: solid;
+        border-color: red;
+    }
+    .pervui a:nth-child(3){
+        border-right: solid;
+        border-color: red;
+    }
+    .pervui a:nth-child(4){
+        border-right: solid;
+        border-color: red;
+    }
+
+
+    .vtoroi a{
+        padding: 0px 10px 0px 10px;
+        color: green;
+    }
+    .vtoroi img{
+        vertical-align: middle;
+    }
+    .vtoroi a:hover{
+        color: red;
+    }
+
+
+    .tretui a{
+        color: green;
+    }
+    .tretui a:hover{
+        color: red;
+    }
+    .tretui a{
+        padding-left: 10px;
+    }
+    .tretui span{
+        padding-right: 10px;
+        position: relative;
+    }
+    .tretui span::after{
+        content: "";
+        background: url(Бордер.png);
+        position: absolute;
+        width: 3px;
+        height: 50px;
+        top: -13px ;
+        right: -5px ;      
+    }
+
+</style>
+
+
+<body>
+    <h1>Задание №6а</h1>
+
+    <!-- Ссылки автоматически выстроились в строку, красная граница выполнена при помощи бордеров с 
+    правой стороны, заданной первым 4м элементам дива, и паддингов. Но так, как тег "а" строчный, то
+    высота самого бордера будет по высоте содержимого. Как по мне самый простой способ не требующий 
+    никаких лишних действий, но не соответствующий реальной картине.  -->
+    <div class="pervui">
+    <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/" target="_blank">Первая ссылка</a>
+    <a href="https://webcode.tools/" target="_blank">Вторая ссылка</a>
+    <a href="https://favicon.io/" target="_blank">Третья ссылка</a>
+    <a href="https://tinypng.com/" target="_blank">Четвертая ссылка</a>
+    <a href="https://www.resizepixel.com/ru" target="_blank">Пятая ссылка</a>
+    </div>  
+
+    <br>
+    <br>
+
+    <!-- Второй найденный способ - это теже выстроенные автоматически в строку ссылки, но разделители
+    выполнены при помощи картинок. Расстояние задано паддингами, а смещение разделителей "вертикальным смещением"
+    в пределах родительского контейнера. простой способ по количеству написанных стилевых свойств, но 
+    требует вмешательства сторонних ресурсов и работы с картинкой. -->
+    <div class="vtoroi">
+        <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/" target="_blank">Первая ссылка</a>
+            <img src="Бордер.png" alt="">
+        <a href="https://webcode.tools/" target="_blank">Вторая ссылка</a>
+            <img src="Бордер.png" alt="">
+        <a href="https://favicon.io/" target="_blank">Третья ссылка</a>
+            <img src="Бордер.png" alt="">
+        <a href="https://tinypng.com/" target="_blank">Четвертая ссылка</a>
+            <img src="Бордер.png" alt="">
+        <a href="https://www.resizepixel.com/ru" target="_blank">Пятая ссылка</a>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Третий способ - разделители были добавлены ввиде фона через стилевой селектор "after" и
+    позиционированием относительно текста (спанов). Пятую ссылку пришлось не оборачивать в спан, что бы было
+    сходство с примером из задания, но тогда возникла необходимость ввести корректировку по паддингам
+    у тегов "а" и "span". -->
+    <div class="tretui">
+        <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/" target="_blank"><span>Первая ссылка</span></a>
+        <a href="https://webcode.tools/" target="_blank"><span>Вторая ссылка</span></a>
+        <a href="https://favicon.io/" target="_blank"><span>Третья ссылка</span></a>
+        <a href="https://tinypng.com/" target="_blank"><span>Четвертая ссылка</span></a>
+        <a href="https://www.resizepixel.com/ru" target="_blank">Пятая ссылка</a>
+    </div>
+
+
+</body>
+</html>

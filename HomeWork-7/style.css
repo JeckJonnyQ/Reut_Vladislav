@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.privet{
+    background-color:rgb(126, 182, 228);
+    height: 40px;
+    text-align: center;
+    color: rgb(78, 8, 143);
+    vertical-align: middle;
+    line-height: 40px;
+}
+
+
+
+
+
+h1{
+    text-align: center;
+    line-height: 40px;
+    margin: 0px;
+}
+ul{
+    margin: 20px 20px 20px 40px;
+    list-style-type: disc;
+}
+.paragraf{
+    text-indent: 30px;
+    padding: 10px;
+    font-size: 18px;
+}
+.img{
+    margin: 10px 10px 0px 10px;
+    float: left;
+}
+
+
+
+
+
+.glavnoe{
+    background-color:rgb(126, 182, 228);
+    color: rgb(78, 8, 143);
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+
+
+@media all and (max-width: 1000px){
+    .menu{
+        display: flex;
+        float: none;    
+    }
+    .A{
+        display: flex;
+        float: none;
+    }
+    .B{
+        display: flex;
+        float: none;
+    }
+}
+

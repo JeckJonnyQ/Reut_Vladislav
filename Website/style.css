@@ -9,16 +9,31 @@ body{
     font-weight: 400px;
     color: #2B2C54;
     height: 10000px;
+    overflow-x: hidden;
 }
 
-.fon1{
-    width: 1920px;
+.header_fon{
     position: relative;
-    background: url(images/fon1.png) no-repeat 235px -10px,
-                url(images/fonMid1.png) no-repeat 568px 3207px,
-                url(images/fonMid2.png) no-repeat 1191px 3136px,
-                url(images/fonlast.png) no-repeat 0px 5214px,
-                url(images/contacts.png) no-repeat 0px 5796px;
+    background: url(images/Fon_Verh.png) no-repeat 242px 0px;
+    z-index: -1;
+}
+
+.pr_bl3_fon{
+    position: relative;
+    background: url(images/FonMid1.png) no-repeat 0px 450px,
+                url(images/FonMid2.png) no-repeat -15px 395px;
+    z-index: -1;
+}
+
+.cur_fon{
+    position: relative;
+    background: url(images/FonMid3.png) no-repeat 569px 662px,
+                url(images/FonMid4.png) no-repeat 1193px 585px;
+    z-index: -1;
+}
+.footer_fon{
+    position: relative;
+    background: url(images/FonNiz.png) no-repeat  0px 240px;
     z-index: -1;
 }
 
@@ -74,7 +89,8 @@ h4{
 }
 
 
-/* header */
+        /* header */
+
 .header .container{
     display: flex;
     justify-content: space-between;
@@ -285,6 +301,7 @@ h2 span{
     height: 772px;
     top: -75px;
     right: -900px;
+    z-index: -1;
 }   
 
 /* program_curator */
@@ -348,6 +365,7 @@ h2 span{
     box-shadow: 0px 30px 60px rgba(43, 44, 84, 0.1);
     padding-top: 33px;
 }
+
 .curator .ml114mt124 p{
     margin-left: 70px;
     margin-top: 124px;
@@ -355,6 +373,9 @@ h2 span{
     font-size: 18px;
     line-height: 140%;
     color: rgba(43, 44, 84, 0.7);
+}
+.curator .ml114mt124 p span{
+    padding-top: -10px;
 }
 
 /* program_block4 */
@@ -376,7 +397,7 @@ h2 span{
 }
 .program_block4 h2 span::after{
     content: "";
-    background: url(images/oval3.png);
+    background: url(images/oval3.png) no-repeat;
     position: absolute;
     width: 307px;
     height: 91px;
@@ -440,9 +461,9 @@ h2 span{
 }
 
 .program_block5 .obuchenie h4{
-    margin: 285px 0px 30px 100px;
+    margin: 62px 0px 30px 100px;
 }
-.program_block5 .obuchenie img{
+.program_block5 .obuchenie .sert_center{
     margin-left: 100px;
 }
 
@@ -500,22 +521,49 @@ h2 span{
 
         /* footer */
 
-.footer .foot ul{
+.footer .socseti{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    padding-left: 1285px;
+    margin-top: 167px;
+}
+.footer .socseti li{
+    width: 36px;
+    margin-right: 20px;
 }
 
-.footer .foot ul li h5{
-    margin-top: 253px;
+.footer .foot_menu ul{
+    display: flex;
+}
+.footer .foot_menu ul li{
+    width: 335px;
+}
+.footer .foot_menu ul li:nth-child(1){
+    width: 375px;
+    margin-right: 140px;
+}
+.footer .foot_menu ul li:nth-child(2){
+    margin-right: 50px;
+}
+.footer .foot_menu ul li:nth-child(3){
+    margin-right: 50px;
+}
+.footer .foot_menu ul li:last-child{
+    margin-right: 0px;
+    padding-bottom: 130px;
+}
+
+.footer .foot_menu li h5{
+    margin-top: 60px;
     margin-bottom: 20px;
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 120%;
-    color: #FFFFFF;
+    color: #F6F4FE;
 }
-.footer .foot ul li h6{
+.footer .foot_menu li h6{
     margin-bottom: 8px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -525,7 +573,7 @@ h2 span{
     color: #F6F4FE;
 }
 
-.footer .foot ul li p{
+.footer .foot_menu li p{
     margin-bottom: 15px;
     font-family: 'Inter',sans-serif;
     font-style: normal;
@@ -535,7 +583,4 @@ h2 span{
     color: #F6F4FE;
 }
 
-.footer .foot ul li:last-child p:last-child{
-    margin-bottom: 177px;
-}
 

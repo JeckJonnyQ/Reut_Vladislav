@@ -1,0 +1,166 @@
+@media all and (max-width: 1760px){
+    .container{
+        width: 1200px;
+    }
+    .header ul li{
+        margin-right: 25px;
+    }
+
+
+
+    .program_block h2 span::before{
+        left: -85px;
+    }
+
+
+
+    .program_block2 h2{
+        margin-top: 120px;
+    }
+
+    .program_block2 ul{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-right: 40px;
+        margin-left: 40px;
+      }
+      .program_block2 ul li{
+        width: 398px;
+        margin-right: 0px;
+    }
+    .program_block2 ul li:nth-child(n+3){
+        margin-top: 30px;
+    }
+
+
+
+
+    .program_block3 h2 span::after{
+        background-size: 65% auto;
+        top: 8px;
+        right: -889px;
+    }
+    .program_block3 h2 span::before{
+        background: none;
+    }
+    .program_block3 ul li{
+        margin-left: 50px;
+    }
+    .program_block3 p{
+        margin-left: 25px;
+    }
+    .program_block3 h2{
+        margin-left: 25px;
+        margin-top: 120px;
+    }
+
+
+
+
+    .program_curator h2{
+        margin-top: 150px;
+    }
+    .curator ul li::after{
+        background: none;
+    }
+    .curator{
+        margin-left: 95px;
+    }
+    .curator .ml114mt124 p {
+        margin-left: 35px;
+    }
+    .curator .ml114mt124 p br:nth-child(-n+3){
+        display: none;
+    }
+
+
+
+
+    .program_block4 .kakmuychim h2 {
+        margin-left: 20px;
+    }
+    .program_block4 .kakmuychim h5{
+        margin-left: 20px;
+    }
+    .program_block4 .kakmuychim p{
+        margin-left: 20px;
+    }
+    .program_block4 h2 span::after{
+        right: -95px;
+    }
+
+
+
+
+    .program_block5 .obuchenie{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .program_block5 h2{
+        text-align: center;
+        margin-left: 0px;
+    }
+    .program_block5 .obuchenie p{
+        text-align: start;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .program_block5 .obuchenie h4{
+        width: 350px;
+        text-align: start;
+        margin-left: 275px;
+        margin-bottom: 18px;
+    }
+    
+    .program_block5 .obuchenie h4 br{
+        display: none;
+    }
+    .program_block5 .obuchenie .sert_center{
+        text-align: center;
+        margin-left: 0px;
+    }
+    .program_block5 .obuchenie h4 span::after{
+        content: "";
+        background: url(images/strelkarotate.png) no-repeat;
+        width: 115px;
+        height: 63px;
+        position: absolute;
+        right: -225px;
+        top: 3px;
+    }
+
+    .program_consult h2{
+        margin-top: 57px;
+        margin-left: 129px;
+        width: 990px;
+    }
+    .program_consult h2 br{
+        display: none;        
+    }
+
+    .program_consult h2 span::before{
+        display: none;
+    }
+
+
+
+
+    .footer .foot{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .footer .foot li{
+        width: 400px;
+        margin-top: 0px;
+        margin-left: 110px;
+        margin-right: 90px;
+    }
+
+    .footer .foot li h5{
+        margin-top: 18px;
+    }
+
+
+}

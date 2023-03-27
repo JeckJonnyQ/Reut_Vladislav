@@ -538,6 +538,18 @@ h2 span{
 .footer .foot_menu ul li{
     width: 335px;
 }
+
+.footer .foot_menu span{
+    padding-left: 28px;
+}
+.footer .foot_menu p svg{
+    width: 24px;
+    height: 24px;
+    vertical-align: -5px;
+}
+
+
+
 .footer .foot_menu ul li:nth-child(1){
     width: 375px;
     margin-right: 140px;

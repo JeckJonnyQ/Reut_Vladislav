@@ -513,6 +513,7 @@ padding-bottom: 190px;
 .footer .socseti{
     display: flex;
     justify-content: right;
+    align-items: center;
     margin-right: 60px;
 }
 .footer .socseti li{

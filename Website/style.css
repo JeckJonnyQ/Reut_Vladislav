@@ -12,29 +12,12 @@ body{
     overflow-x: hidden;
 }
 
-.header_fon{
-    position: relative;
-    background: url(images/Fon_Verh.png) no-repeat 242px 0px;
-    z-index: -1;
-}
-
 .pr_bl3_fon{
-    position: relative;
-    background: url(images/FonMid1.png) no-repeat 0px 450px,
-                url(images/FonMid2.png) no-repeat -15px 395px;
-    z-index: -1;
-}
-
-.cur_fon{
-    position: relative;
-    background: url(images/FonMid3.png) no-repeat 569px 662px,
-                url(images/FonMid4.png) no-repeat 1193px 585px;
-    z-index: -1;
-}
-.footer_fon{
-    position: relative;
-    background: url(images/FonNiz.png) no-repeat  0px 240px;
-    z-index: -1;
+    background: url(images/GreenGirl.png) no-repeat right 100px top 215px,
+                url(images/FonMid1.png) no-repeat 0px 140px,
+                url(images/FonMid2.png) no-repeat 0px 90px;
+    padding-top: 5px;
+    padding-bottom: 210px;
 }
 
 li{
@@ -91,6 +74,11 @@ h4{
 
         /* header */
 
+.header_fon{
+    background: url(images/Fon_Verh.png) no-repeat;
+    background-position: 242px 0px;
+}
+
 .header .container{
     display: flex;
     justify-content: space-between;
@@ -137,8 +125,10 @@ h2 span::before{
     height: 121px;
     top: -23px;
     left: -101px;
-    z-index: -1;
+    z-index: 0;
 }
+
+
 .mt20{
     margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -247,19 +237,21 @@ h2 span::before{
 
 /* Program_block3 */
 
-.program_block3 h2{
-    margin-top: 205px;
-    margin-left: 142px;
-    text-align: start;
-}
-.program_block3 p{
-    margin: 30px 0px 30px 142px;
+.program_block3 .chemy_naych h2{
+    display: flex;
+    justify-content: start;
+    margin-top: 270px;
+    margin-left: 160px;
+} 
+
+.program_block3 .chemy_naych p{
+    margin: 30px 0px 30px 160px;
     font-size: 18px;
     line-height: 140%;
 }
 
 .program_block3 li{
-    margin-left: 160px;
+    margin-left: 180px;
     margin-bottom: 16px;
     font-size: 18px;
     line-height: 140%;
@@ -291,24 +283,12 @@ h2 span{
     width: 262px;
     height: 346px;
     top: 0px;
-    left: -250px;
-}
-.program_block3 h2 span::after{
-    content: "";
-    background: url(images/GreenGirl.png) no-repeat;
-    position: absolute;
-    width: 750px;
-    height: 772px;
-    top: -75px;
-    right: -900px;
-    z-index: -1;
-}   
+    left: -260px;
+    z-index: 0;
+} 
 
-/* program_curator */
+                /* program_curator */
 
-.program_curator h2{
-    margin-top: 320px;
-}
 .program_curator h2 span{
     position: relative;
 }
@@ -378,18 +358,23 @@ h2 span{
     padding-top: -10px;
 }
 
-/* program_block4 */
+            /* program_block4 */
 
-.kakmuychim{
+.pr_bl4_fon{
+background: url(images/redgirl.png) no-repeat left 65px top 770px,
+            url(images/FonMid3.png) no-repeat right -25px top 660px,
+            url(images/FonMid4.png) no-repeat right 0px top 585px;
+padding-bottom: 190px;
+}
+
+.program_block4 .kakmuychim{
     display: flex;
-    margin-top: 120px;
-    margin-left: -53px;
+    justify-content: right;
 }
 
 .program_block4 .kakmuychim h2{
-    text-align: start;
-    margin-top: 36px;
-    margin-left: 73px;
+    margin-top: 163px;
+    margin-right: 515px;
     margin-bottom: 46px;
 }
 .program_block4 h2 span{
@@ -403,14 +388,13 @@ h2 span{
     height: 91px;
     top: 0px;
     right: -118px;
-    z-index: -1;
+    z-index: 0;
 }
 .program_block4 h2 span::before{
     content: none;
 }
 .program_block4 h5{
     margin-bottom: 10px;
-    margin-left: 73px;
     font-family: 'Montserrat',sans-serif;
     font-weight: 600;
     font-size: 20px;
@@ -418,7 +402,6 @@ h2 span{
 }
 .program_block4 p{
     margin-bottom: 30px;
-    margin-left: 73px;
     font-family: 'Inter',sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -426,15 +409,16 @@ h2 span{
     color: rgba(43, 44, 84, 0.7);
 }
 
-/* program_block5 */
+
+            /* program_block5 */
 
 .program_block5 .obuchenie{
     display: flex;
 }
 .program_block5 h2{
         text-align: start;
-        margin-top: 142px;
-        margin-left: 151px;
+        margin-top: 45px;
+        margin-left: 145px;
 }
 .program_block5 h2 span{
     position: relative;
@@ -521,11 +505,15 @@ h2 span{
 
         /* footer */
 
+.footer_fon{
+    background: url(images/FonNiz.png) no-repeat  right 0px top 0px;
+    padding-top: 154px;
+}
+
 .footer .socseti{
     display: flex;
-    align-items: center;
-    padding-left: 1285px;
-    margin-top: 167px;
+    justify-content: right;
+    margin-right: 60px;
 }
 .footer .socseti li{
     width: 36px;
@@ -549,7 +537,6 @@ h2 span{
 }
 
 
-
 .footer .foot_menu ul li:nth-child(1){
     width: 375px;
     margin-right: 140px;
@@ -562,7 +549,7 @@ h2 span{
 }
 .footer .foot_menu ul li:last-child{
     margin-right: 0px;
-    padding-bottom: 130px;
+    padding-bottom: 155px;
 }
 
 .footer .foot_menu li h5{

@@ -4,24 +4,166 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FORM</title>
 </head>
+
+
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin-left: 175px;
+    text-align: start;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+ul li{
+    margin-bottom: 20px;
+}
+
+ul li:nth-child(1) span{
+    margin-right: 30px;
+    margin-left: 57px;
+}
+ul li:nth-child(2) span{
+    margin-right: 31px;
+    padding-left: 25px;
+    margin-left: 57px;
+}
+ul li:nth-child(3) span{
+    margin-right: 33px;
+    margin-left: 57px;
+}
+ul li:nth-child(4) span{
+    margin-right: 33px;
+    padding-left: 34px;
+}
+ul li:nth-child(5) span{
+    margin-right: 29px;
+    padding-left: 66px;
+}
+ul li:nth-child(6) span{
+    margin-right: 27px;
+    padding-left: 70px;
+}
+ul li:nth-child(6) span + input + span{
+    padding-left: 10px;
+}
+
+ul li:nth-child(7) span{
+    margin-right: 33px;
+    padding-left: 83px;
+}
+ul li:nth-child(7) label span + input + span{
+    padding-left: 10px;
+    margin-right: 0px;
+}
+
+ul li:nth-child(8) span{
+    margin-right: 33px;
+    padding-left: 48px;
+}
+ul li:nth-child(8) label input + span{
+    padding-left: 10px;
+    margin-right: 0px;
+}
+
+ul li:nth-child(9) span{
+    padding-left: 10px;
+}
+ul li:nth-child(9){
+    margin-left: 150px;
+}
+
+textarea{
+    width: 300px;
+    height: 100px;
+    resize: none;
+    margin-left: 150px;
+    margin-bottom: 10px;
+}
+input[type="submit"]{
+    width: 300px;
+    height: 30px;
+    margin-left: 150px;
+    
+}
+
+input[type="text"]{
+    width: 300px;
+}
+input[type="email"]{
+    width: 300px;
+}
+input[type="password"]{
+    width: 300px;
+}
+input[type="date"]{
+    width: 300px;
+}
+select[name="country"]{
+    width: 304px;
+}
+
+</style>
 <body>
-    <h1>Registration Form</h1>
+            <h1>Registration Form</h1>
 
 
-    <form action="http://fe.it-academy.by/formService.php" method="">
-
-    <label> Full name <input type="text" name="name" placeholder="Full Name" ></label>
-    <label> Email</label><input>
+    <form action="http://fe.it-academy.by/formService.php" method="GET" target="_blank">    
 
 
+        <ul>
+            <li><label><span>Full name</span><input type="text" name="name" maxlength="45" placeholder="Full Name" autofocus></label></li>
 
+            <li><label><span>Email</span><input type="email" name="Email" placeholder="Email"></label></li>
+
+            <li><label><span>Password</span><input type="password" name="password" placeholder="Password"></label></li>
+
+            <li><label><span>Date of Birth</span><input type="date" name="datebirth"></label></li>
+
+            <li><span>Country</span>
+                <select name="country">Country
+                    <option value="germania">Германия</option>
+                    <option value="belarus">Беларусь</option>
+                    <option value="ukranian">Украина</option>
+                    <option value="litva">Литва</option>
+                    <option value="latvia">Латвия</option>
+                    <option value="estonia">Эстония</option>
+                    <option value="polsha">Польша</option>
+                    <option value="kazahstan">Казахстан</option>
+                </select>         
+            </li>
+
+            <li><span>Gender</span>          
+                <input type="radio" name="pol" value="F"><span>Female</span>
+                <input type="radio" name="pol" value="M"><span>Male</span>
+                <input type="radio" name="pol" value="U"><span>Unknown</span>
+            </li>
+
+            <li><label><span>Meal</span><input type="checkbox" value="" name=""><span>Low calorie</span></label></li>
+
+            <li><label><span>Preference</span><input type="checkbox" value="" name=""><span>Low salt</span></label></li>
+            
+            <li><label><input type="checkbox" value="" name="check"><span>I accept terms</span></label></li> <br>
+
+            <textarea></textarea><br>
+        
+            
+        </ul>
+
+        <input type="submit" value="Register">
 
     </form>
-
-
-
 
 </body>
 </html>

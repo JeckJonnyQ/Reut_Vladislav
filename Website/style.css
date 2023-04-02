@@ -115,6 +115,7 @@ h4{
 
 h2 span{
     position: relative;
+    z-index: 2;
 }
 
 h2 span::before{
@@ -125,7 +126,7 @@ h2 span::before{
     height: 121px;
     top: -23px;
     left: -101px;
-    z-index: 0;
+    z-index: -1;
 }
 
 
@@ -388,7 +389,7 @@ padding-bottom: 190px;
     height: 91px;
     top: 0px;
     right: -118px;
-    z-index: 0;
+    z-index: -1;
 }
 .program_block4 h2 span::before{
     content: none;
@@ -490,8 +491,51 @@ padding-bottom: 190px;
 
 .program_consult .cons{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+
+.program_consult .form{
+    position: relative;
+    width: 541px;
+}
+.program_consult .cons input:first-child{
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.program_consult .cons span::before{
+    content: "Ваше имя";
+    background: url(images/FonInput.png) no-repeat right;
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    top: 30px;
+    left: 20px;
+    padding-left: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(43, 44, 84, 0.7);
+}
+
+.program_consult .cons .form input{
+    width: 540px;
+    height: 60px;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    border: 1px solid rgba(43, 44, 84, 0.15);
+    border-radius: 40px;
+}
+
+.program_consult .cons .form input:focus{
+    border: 1px solid #B5A4F8;
+}
+
 .program_consult .btn2{   
     margin-top: 30px;
     margin-bottom: 47px;

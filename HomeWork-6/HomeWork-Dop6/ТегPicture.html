@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Picture</title>
 </head>
 
 
@@ -13,15 +14,16 @@
 <div>
 
     <picture>
-        <source
-            srcset="small.jpg 640w, 
-                    medium.jpg 1280w,
-                    large.jpg 1920w"
-            sizes="(min-width: 1300px) 1280px,
-                    (min-width: 700px) 640px,
-                    100vw"
-        img src="large.jpg"
+        <source srcset="small.jpg" media="(max-width:1650px)"> 
+        <img src="medium.jpg">
     </picture>
+
+    <p>Тэг Picture - позволяет загружать на сайт различные изображения в зависимости от выполнения конкретных условий. <br>
+        Например: при обычной загрузке на экране 1920px появится картинка загруженная тегом IMG, при сужении экрана до условия <br>
+        в 1650px, будет происходить загрузка картинки меньшего размера, указанная в теге SOURCE c атрибутом SRCSET. <br>
+        Таких условий может быть прописано несколько под разные картинки и размеры экранов, вплоть до того, что картинки могут <br>
+        различаться в зависимости от темы браузера (темная или светлая) - @media (prefers-color-scheme: dark).
+    </p>
 
 </div>
 

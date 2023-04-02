@@ -2,65 +2,73 @@
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+}
 .privet{
     background-color:rgb(126, 182, 228);
-    height: 40px;
+    height: auto;
     text-align: center;
     color: rgb(78, 8, 143);
     vertical-align: middle;
     line-height: 40px;
 }
 
-
-
+.menu{
+    width: 200px;
+    float: left;
+}
+.menu ul{
+    margin: 20px 40px 20px 40px;
+    list-style-type: disc;
+}
 
 
 h1{
     text-align: center;
-    line-height: 40px;
-    margin: 0px;
+    line-height: 25px;
+    margin: 10px;
 }
-ul{
-    margin: 20px 20px 20px 40px;
-    list-style-type: disc;
-}
-.paragraf{
-    text-indent: 30px;
+
+
+.osnova{
+    background: url(images/Мяч.png) repeat-y right top;
+    background-color:rgb(255, 255, 255);
+    margin-left: 200px;
     padding: 10px;
-    font-size: 18px;
 }
-.img{
-    margin: 10px 10px 0px 10px;
-    float: left;
-}
-
-
-
-
 
 .glavnoe{
     background-color:rgb(126, 182, 228);
     color: rgb(78, 8, 143);
-    height: 60px;
+    height: auto;
     text-align: center;
     vertical-align: middle;
     line-height: 60px;
 }
 
 
-
-@media all and (max-width: 1000px){
+@media all and (max-width: 1024px){
+    .both{
+        display: flex;
+        flex-direction: column;
+        clear: none;
+    }
     .menu{
         display: flex;
-        float: none;    
-    }
-    .A{
-        display: flex;
         float: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
-    .B{
-        display: flex;
-        float: none;
+    .menu ul{
+        margin: 0px;
+        text-align: center;
+    }
+    .menu ul li{
+        list-style-type: none;
+    }
+    .osnova{
+        margin-left: 0px;
     }
 }
-

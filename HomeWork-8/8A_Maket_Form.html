@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MAKET_FORM</title>
+
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    } 
+    .form{
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .input{
+        width: 100%;
+    }
+    .select{
+        margin-left: 140px;
+    }
+    .A{
+        float: left;
+    }
+    .B{
+        margin-left: 200px;
+    }
+    .radio br{
+        display: none;
+    }
+    .radio span{
+        padding-left: 5px;
+    }    
+    .radio input[type="radio"]{
+        margin-left: 10px;
+    }
+    .radio input:first-child{
+        margin-left: 112px;
+    }
+    input[type="checkbox"]{
+        margin-left: 28px;
+    }
+    textarea{
+        width: 100%;
+        height: 50px;
+    }
+    
+    @media all and (max-width:700px){
+        .A{
+            float: none;
+        }
+        .B{
+            margin-left: 0px;
+        }
+        .select{
+            margin-left: 0px;
+            margin-top: 5px;
+        }
+        .radio input[type="radio"]{
+            margin-left: 0px;
+            margin-top: 5px;
+        }
+        .radio br{
+            display: block;
+        }
+        input[type="checkbox"]{
+        margin-left: 10px;
+        }
+    }
+    </style>
+</head>
+
+
+
+<body>
+    <form class="form" action="http://fe.it-academy.by/TestForm.php" method="post">
+
+    <p>Для публикации вашей статьи зполните, пожалуйста, следующую форму:</p><br>
+
+    <label class="A">Название статьи:</label>
+    <div class="B">
+        <input class="input" type="text" name="statia">
+    </div>
+    <br>
+    <label class="A">Рубрика:</label>
+    <div>
+        <select class="select" name="rubrika">
+            <option value="prog">Программирование</option>
+            <option value="verst">Верстка Сайтов</option>
+            <option value="desig">Дизайн ui/ux</option>
+            <option value="react">React</option>
+        </select>
+    </div>
+    <br>
+    <label class="A">Публикация:</label>
+    <div class="radio">
+        <input type="radio" name="site"><span>На сайте</span><br>
+        <input type="radio" name="journal"><span>В журнале</span><br>
+        <input type="radio" name="site&journal"><span>На сайте и В журнале</span>
+    </div>
+    <br>
+    <label class="A">Разрешить комментарии:</label>
+    <input type="checkbox">
+    <br>
+    <br>
+    <label>Текст cтатьи:</label><br>
+    <textarea name="comment"></textarea>
+    <br>
+    <input type="submit" value="Опубликовать">
+
+    </form> 
+</body>
+</html>

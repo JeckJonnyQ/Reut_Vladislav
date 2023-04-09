@@ -5,14 +5,18 @@
     .header ul li{
         margin-right: 25px;
     }
-
+    .header_fon{
+        background: url(images/GirlYellow.png) no-repeat 90px 355px,
+                    url(images/Fon_Verh.png) no-repeat 170px 0px;
+    }
+    .pr_bl_infa .infa{
+        margin-right: 170px;
+    }
 
 
     .program_block h2 span::before{
         left: -85px;
     }
-
-
 
     .program_block2 h2{
         margin-top: 120px;
@@ -34,31 +38,31 @@
 
 
 
-
-    .program_block3 h2 span::after{
-        background-size: 65% auto;
-        top: 8px;
-        right: -889px;
+    .pr_bl3_fon{
+    background: url(images/GreenGirl2.png)
+                right 0px top 135px no-repeat,
+                url(images/FonMid1.png) no-repeat 0px 15px,
+                url(images/FonMid2.png) no-repeat -160px -55px;
+    padding-top: 5px;
+    padding-bottom: 190px;
+    }
+    .program_block3 .chemy_naych h2{
+        margin-left: 0px;
+        margin-top: 105px;
+    }
+    .program_block3 .chemy_naych p{
+        margin-left: 0px;
+    }
+    .program_block3 .chemy_naych ul li{
+        margin-left: 20px;
     }
     .program_block3 h2 span::before{
         background: none;
     }
-    .program_block3 ul li{
-        margin-left: 50px;
-    }
-    .program_block3 p{
-        margin-left: 25px;
-    }
-    .program_block3 h2{
-        margin-left: 25px;
-        margin-top: 120px;
-    }
-
-
 
 
     .program_curator h2{
-        margin-top: 150px;
+        margin-top: 45px;
     }
     .curator ul li::after{
         background: none;
@@ -75,20 +79,27 @@
 
 
 
-
-    .program_block4 .kakmuychim h2 {
-        margin-left: 20px;
+    .pr_bl4_fon{
+        background: url(images/redgirl2.png) no-repeat left -40px top 845px,
+                    url(images/FonMid3.png) no-repeat right -25px top 660px,
+                    url(images/FonMid4.png) no-repeat right 0px top 585px;
+        padding-bottom: 140px;
+    }
+    .program_block4 .kakmuychim h2{
+        margin-top: 163px;
+        margin-right: 60px;
     }
     .program_block4 .kakmuychim h5{
-        margin-left: 20px;
+        width: 660px;
+        margin-left: 200px;
+    }
+    .program_block4 .kakmuychim p br{
+        display: none;
     }
     .program_block4 .kakmuychim p{
-        margin-left: 20px;
+        width: 660px;
+        margin-left: 200px;
     }
-    .program_block4 h2 span::after{
-        right: -95px;
-    }
-
 
 
 

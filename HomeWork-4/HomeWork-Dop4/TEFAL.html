@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        height: 1000px;
+    }
+    p {
+        font-size: 50px;
+        text-align: center;
+    }
+    .flex{
+        display: flex;
+        margin: auto;
+        margin-top: 250px;
+        width: 455px;
+        height: 225px;
+
+    }
+    .skovor {
+        width: 455px;
+        height: 225px;
+        position: relative;
+    }
+    .A {
+        z-index: 1;
+        position: absolute;
+    }
+    .B {
+        top: 15px;
+        left: 60px;
+        z-index: 2;
+        position: absolute;
+    }
+    .skovor:hover .B {
+        transform: translateY(-200px);
+        transition: 2s;
+    }
+    .C {
+        z-index: 3;
+        position: absolute;
+    }
+</style>
+
+<body>
+    <p>СКОВОРОДКИ - НАВЕДИ НА МАЛУЮ</p>
+    <div class="flex">
+        <div class="skovor">
+            <img class="A" src="../images/SkovorBol.png" alt="Большая сковорода">
+            <img class="B" src="../images/SkovorMal.png" alt="Малая сковорода">
+            <img class="C" src="../images/SkovorKus.png" alt="Кусочек сковороды">
+        </div>
+    </div>
+
+</body>
+
+</html>

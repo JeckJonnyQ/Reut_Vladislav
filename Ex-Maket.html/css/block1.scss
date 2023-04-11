@@ -1,0 +1,76 @@
+.block1 {
+    height: 880px;
+    background: url(../images/Fon_block1.png) no-repeat left 0px top 0px,
+        url(../images/Fon_block2.png) no-repeat right 0px top 0px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.main {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contacts {
+    margin-top: 118px;
+
+    li {
+        margin-bottom: 20px;
+
+        p {
+            display: inline;
+            padding-left: 16px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.contacts li:last-of-type {
+    margin-bottom: 30px;
+}
+
+
+.avia {
+    width: 805px;
+    margin-top: 80px;
+    margin-right: 40px;
+
+    p {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+.avia h1 {
+    margin-bottom: 37px;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 75px;
+    color: #FFFFFF;
+}
+
+.avia li {
+    margin-bottom: 22px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+        &:last-of-type{
+            margin-bottom: none;
+        }
+}
+
+.flower{
+    margin-left: 190px;
+    img{
+        margin-right: 30px;
+        margin-bottom: 25px;
+    }
+}

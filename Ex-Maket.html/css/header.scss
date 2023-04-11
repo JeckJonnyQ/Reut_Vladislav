@@ -1,0 +1,31 @@
+header {
+    background-color: #1A2633;
+    height: 70px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+        display: flex;
+
+        li {
+            margin-right: 60px;
+
+            a {
+                text-transform: uppercase;
+
+                li:last-child {
+                    margin-right: 64px;
+                }
+            }
+        }
+    }
+}
+    .head_logo {
+        display: flex;
+        align-items: center;
+        height: 70px;
+    }

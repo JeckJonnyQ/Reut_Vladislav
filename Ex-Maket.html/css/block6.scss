@@ -1,0 +1,21 @@
+.block6 {
+    background: url(../images/Fon_block6a.png) no-repeat top 0px left 0px,
+        url(../images/Fon_block6b.png) no-repeat top 0px left 961px,
+        url(../images/Fon_block6c.png) no-repeat top 0px left 1376px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.zakazat{
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+}
+form .btn{
+    margin-bottom: 120px;
+}
+form{
+    input[type=text],[type=tel]{
+        width: 300px;
+        outline: none;
+    }
+}

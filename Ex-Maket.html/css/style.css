@@ -1,5 +1,6 @@
 @import url(generalstyle.css);
+@import url(mixins.css);
 @import url(header.css);
 @import url(block1.css);
-
-/*# sourceMappingURL=style.css.map */
+@import url(block5.css);
+@import url(block6.css);

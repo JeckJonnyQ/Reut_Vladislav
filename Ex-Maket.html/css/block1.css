@@ -1,6 +1,5 @@
 .block1 {
-  height: 880px;
-  background: url(../images/Fon_block1.png) no-repeat left 0px top 0px, url(../images/Fon_block2.png) no-repeat right 0px top 0px;
+  background: url(../images/Fon_block1.png) no-repeat left 0px top 0px, url(../images/Fon_block1a.png) no-repeat right 0px top 0px;
   padding-top: 1px;
   padding-bottom: 1px; }
 
@@ -11,18 +10,6 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
-
-.contacts {
-  margin-top: 118px; }
-  .contacts li {
-    margin-bottom: 20px; }
-    .contacts li p {
-      display: inline;
-      padding-left: 16px;
-      color: #FFFFFF; }
-
-.contacts li:last-of-type {
-  margin-bottom: 30px; }
 
 .avia {
   width: 805px;
@@ -36,27 +23,92 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF; }
+  .avia h1 {
+    margin-bottom: 37px;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 75px;
+    color: #FFFFFF; }
+    .avia h1 span {
+      position: relative; }
+      .avia h1 span::before {
+        content: "";
+        height: 60px;
+        width: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 12px;
+        left: -35px; }
+  .avia li {
+    margin-bottom: 22px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    position: relative; }
+    .avia li span {
+      position: relative; }
+      .avia li span::before {
+        content: "";
+        position: absolute;
+        background: url(../images/point.png) no-repeat;
+        width: 31px;
+        height: 31px;
+        top: -5px;
+        left: -50px; }
+  .avia:last-child {
+    margin-bottom: 0px; }
 
-.avia h1 {
-  margin-bottom: 37px;
-  font-weight: 600;
-  font-size: 72px;
-  line-height: 75px;
-  color: #FFFFFF; }
-
-.avia li {
-  margin-bottom: 22px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: #FFFFFF; }
-  .avia li:last-of-type {
-    margin-bottom: none; }
+.contacts {
+  margin-top: 118px;
+  position: relative; }
+  .contacts::before {
+    content: "";
+    height: 60px;
+    width: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 3px;
+    left: -35px; }
+  .contacts li {
+    margin-bottom: 20px; }
+    .contacts li p {
+      display: inline;
+      padding-left: 16px;
+      font-weight: 300px;
+      color: #FFFFFF; }
+    .contacts li:last-of-type {
+      margin-bottom: 30px; }
 
 .flower {
-  margin-left: 190px; }
+  margin-left: 190px;
+  margin-top: 106px;
+  width: auto auto; }
   .flower img {
     margin-right: 30px;
     margin-bottom: 25px; }
+
+.carusel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 65px; }
+  .carusel li {
+    text-transform: uppercase; }
+    .carusel li a {
+      font-size: 14px; }
+    .carusel li:nth-child(1) {
+      margin-right: 180px; }
+    .carusel li:nth-child(2), .carusel li:nth-child(3), .carusel li:nth-child(4), .carusel li:nth-child(5) {
+      margin-right: 163px; }
+
+.carusel_items {
+  background-color: goldenrod;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .carusel_items .item1, .carusel_items .item2, .carusel_items .item3 {
+    margin-right: 30px; }

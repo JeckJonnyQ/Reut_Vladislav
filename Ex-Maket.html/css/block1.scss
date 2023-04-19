@@ -1,6 +1,6 @@
 .block1 {
     background: url(../images/Fon_block1.png) no-repeat left 0px top 0px,
-                url(../images/Fon_block1a.png) no-repeat right 0px top 0px;
+        url(../images/Fon_block1a.png) no-repeat right 0px top 0px;
     padding-top: 1px;
     padding-bottom: 1px;
 }
@@ -54,19 +54,21 @@
         line-height: 26px;
         color: #FFFFFF;
         position: relative;
-            span{
-                position: relative;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    background: url(../images/point.png) no-repeat;
-                    width: 31px;
-                    height: 31px;
-                    top: -5px;
-                    left: -50px;
-                }
+
+        span {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                background: url(../images/point.png) no-repeat;
+                width: 31px;
+                height: 31px;
+                top: -5px;
+                left: -50px;
             }
-    }  
+        }
+    }
 
     &:last-child {
         margin-bottom: 0px;
@@ -120,7 +122,8 @@
 
     li {
         text-transform: uppercase;
-        a{
+
+        a {
             font-size: 14px;
         }
 
@@ -139,15 +142,14 @@
 
 
 
-.carusel_items{
+.carusel_items {
     background-color: goldenrod;
     display: flex;
     justify-content: center;
-    .item1, .item2, .item3 {
+
+    .item1,
+    .item2,
+    .item3 {
         margin-right: 30px;
     }
 }
-
-
-
-

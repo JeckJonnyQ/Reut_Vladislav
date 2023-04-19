@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 body {
   height: 6000px;
@@ -58,10 +57,8 @@ li {
     position: absolute;
     top: 0px;
     right: 0px;
-    -webkit-transition-property: height, width;
     transition-property: height, width;
-    -webkit-transition-duration: .3s;
-            transition-duration: .3s; }
+    transition-duration: .3s; }
   .btn::after {
     content: "";
     height: 20px;
@@ -71,10 +68,10 @@ li {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    -webkit-transition-property: height, width;
     transition-property: height, width;
-    -webkit-transition-duration: .3s;
-            transition-duration: .3s; }
+    transition-duration: .3s; }
   .btn:hover::before, .btn:hover::after {
     height: 94%;
     width: 98%; }
+
+/*# sourceMappingURL=generalstyle.css.map */

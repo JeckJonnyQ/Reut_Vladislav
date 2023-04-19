@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SPRITES</title>
+
+    <style>
+
+        @keyframes anima {
+            from {
+                background: url(rabbit.jpg) 0 0;
+            }
+            to {
+                background: url(rabbit.jpg) -1800px 0;
+            }
+        }
+        .wrap {
+            height: 225px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .rabbit {
+            width: 225px;
+            height: 225px;
+            background: url(rabbit.jpg);
+            animation: anima 1s steps(8) infinite;
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="rabbit">
+    </div>
+</div>
+
+</body>
+
+</html>

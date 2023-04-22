@@ -4,13 +4,17 @@
   padding-bottom: 1px; }
 
 .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end; }
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
 
 .avia {
   width: 805px;
   margin-top: 80px;
-  margin-right: 40px; }
+  margin-right: 80px; }
   .avia p {
     margin-bottom: 20px;
     font-weight: 500;
@@ -71,7 +75,9 @@
     .contacts li p {
       display: inline;
       padding-left: 16px;
-      font-weight: 300px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 26px;
       color: #FFFFFF; }
     .contacts li:last-of-type {
       margin-bottom: 30px; }
@@ -85,8 +91,10 @@
     margin-bottom: 25px; }
 
 .carusel {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  margin-bottom: 65px; }
+  margin-bottom: 42px; }
   .carusel li {
     text-transform: uppercase; }
     .carusel li a {
@@ -98,11 +106,13 @@
 
 .carusel_items {
   background-color: goldenrod;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .carusel_items .item1,
   .carusel_items .item2,
   .carusel_items .item3 {
     margin-right: 30px; }
-
-/*# sourceMappingURL=block1.css.map */

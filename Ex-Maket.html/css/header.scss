@@ -10,22 +10,43 @@ header {
 
     ul {
         display: flex;
+        justify-content: space-between;
 
         li {
+            position: relative;
+            width: 120px;
+            text-align: center;
+            text-transform: uppercase;
             margin-right: 60px;
 
-            a {
-                text-transform: uppercase;
+            &::before {
+                content: "";
+                width: 1px;
+                height: 0px;
+                position: absolute;
+                background-color: #227CE4;
+                top: 25px;
+                left: 60px;
+                transition-property: height, width;
+                transition-duration: 0.5s;
+            }
 
-                li:last-child {
-                    margin-right: 64px;
+            &:hover {
+                &::before {
+                    height: 75%;
                 }
             }
+
+            &:nth-child(4) {
+                margin-right: 64px;
+            }
         }
+
     }
 }
-    .head_logo {
-        display: flex;
-        align-items: center;
-        height: 70px;
-    }
+
+.head_logo {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}

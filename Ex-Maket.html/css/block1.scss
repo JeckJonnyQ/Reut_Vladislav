@@ -13,7 +13,7 @@
 .avia {
     width: 805px;
     margin-top: 80px;
-    margin-right: 40px;
+    margin-right: 80px;
 
     p {
         margin-bottom: 20px;
@@ -95,7 +95,9 @@
         p {
             display: inline;
             padding-left: 16px;
-            font-weight: 300px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
             color: #FFFFFF;
         }
 
@@ -118,7 +120,7 @@
 
 .carusel {
     display: flex;
-    margin-bottom: 65px;
+    margin-bottom: 42px;
 
     li {
         text-transform: uppercase;

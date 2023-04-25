@@ -1,0 +1,33 @@
+.block1 {
+  background: url(../images3/Fon_block1.png) no-repeat;
+  background-size: cover;
+  padding-top: 1px;
+  padding-bottom: 1px; }
+  .block1 p {
+    margin-top: 120px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF; }
+  .block1 h2 {
+    margin-top: 20px;
+    margin-bottom: 150px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 75px;
+    color: #FFFFFF; }
+    .block1 h2 span {
+      position: relative; }
+      .block1 h2 span::before {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 1px;
+        background-color: #FFFFFF;
+        top: 115px;
+        left: 165px;
+        color: #FFFFFF; }

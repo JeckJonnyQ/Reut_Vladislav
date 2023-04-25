@@ -1,0 +1,203 @@
+.block2 {
+    background: url(../images1/Fon_block2a.png) no-repeat,
+                url(../images1/Fon_block2b.png) no-repeat -575px 20px,
+                url(../images1/Fon_block2c.png) no-repeat right -550px top 450px;
+    background-color: #16212E;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+@mixin h2 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+@mixin b2before {
+    &::before {
+        content: "";
+        height: 60px;
+        width: 1px;
+        background-color: #9FCCFF;
+        position: absolute;
+        top: -37px;
+        left: -111px;
+    }
+}
+
+
+.block2 {
+    p {
+        margin-top: 120px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #9FCCFF;
+        opacity: 0.7;
+    }
+
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 55px;
+        @include h2;
+    }
+}
+
+.cifra {
+    display: grid;
+    grid-template-columns: 490px 490px 490px;
+    grid-template-rows: 170px 170px;
+    gap: 30px;
+    margin-bottom: 120px;
+
+    .year,
+    .weight,
+    .procent,
+    .countries,
+    .grad,
+    .clients {
+        background: #23303F;
+        border: 1px solid rgba(85, 122, 161, 0.6);
+
+        p {
+            width: 320px;
+            margin-left: 110px;
+            text-transform: none;
+            font-weight: 500;
+            line-height: 22px;
+            color: #BCC9DA;
+            position: relative;
+
+            &:first-child {
+                margin-top: 40px;
+                margin-bottom: 8px;
+                text-align: start;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 37px;
+                color: #9FCCFF;
+            }
+
+            &:last-child {
+                margin-top: 0px;
+                text-align: start;
+                font-size: 16px;
+                color: #FFFFFF;
+                @include b2before;
+            }
+        }
+    }
+}
+
+.year {
+    p {
+        position: relative;
+
+        &:first-child {
+            &::before {
+                content: "";
+                background: url(../images1/year.png) no-repeat;
+                position: absolute;
+                width: 60px;
+                height: 82px;
+                top: 5px;
+                left: -80px;
+            }
+        }
+    }
+}
+
+.weight {
+    p {
+        position: relative;
+
+        &:first-child {
+            &::before {
+                content: "";
+                background: url(../images1/weight.png) no-repeat;
+                position: absolute;
+                width: 60px;
+                height: 82px;
+                top: 5px;
+                left: -80px;
+            }
+        }
+    }
+}
+
+.procent {
+    p {
+        position: relative;
+
+        &:first-child {
+            &::before {
+                content: "";
+                background: url(../images1/procent.png) no-repeat;
+                position: absolute;
+                width: 60px;
+                height: 82px;
+                top: 5px;
+                left: -80px;
+            }
+        }
+    }
+}
+
+.countries {
+    p {
+        position: relative;
+
+        &:first-child {
+            &::before {
+                content: "";
+                background: url(../images1/countries.png) no-repeat;
+                position: absolute;
+                width: 60px;
+                height: 82px;
+                top: 5px;
+                left: -80px;
+            }
+        }
+    }
+}
+
+.grad {
+    p {
+        position: relative;
+
+        &:first-child {
+            &::before {
+                content: "";
+                background: url(../images1/grad.png) no-repeat;
+                position: absolute;
+                width: 60px;
+                height: 82px;
+                top: 5px;
+                left: -80px;
+            }
+        }
+    }
+}
+
+.clients {
+    p {
+        position: relative;
+
+        &:first-child {
+            &::before {
+                content: "";
+                background: url(../images1/clients.png) no-repeat;
+                position: absolute;
+                width: 60px;
+                height: 82px;
+                top: 5px;
+                left: -80px;
+            }
+        }
+    }
+}

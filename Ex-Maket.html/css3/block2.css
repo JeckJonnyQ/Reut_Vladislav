@@ -1,0 +1,181 @@
+.block2 {
+  background: url(../images3/Fon_block2a.png) no-repeat, url(../images2/Fon_block2b.png) no-repeat left -580px top 20px, url(../images3/Fon_block2b.png) no-repeat top 450px right 0px;
+  background-color: #16212E;
+  padding-top: 1px;
+  padding-bottom: 1px; }
+  .block2 h2 {
+    width: 1010px;
+    margin: 120px auto 0px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 46px;
+    color: #FFFFFF; }
+
+.pomog_brok {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .pomog_brok .carta {
+    width: 420px;
+    height: 420px;
+    margin-top: 70px;
+    margin-left: 145px;
+    border: 2px solid rgba(85, 122, 161, 0.3);
+    border-radius: 50%;
+    position: relative;
+    background: url(../images3/karta.png) no-repeat top 130px left 45px; }
+    .pomog_brok .carta:hover {
+      background: url(../images3/karta1.png) no-repeat top 130px left 45px; }
+    .pomog_brok .carta p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: #9FCCFF; }
+      .pomog_brok .carta p:nth-child(1) {
+        position: absolute;
+        top: 198px;
+        left: -120px; }
+        .pomog_brok .carta p:nth-child(1) span {
+          position: relative; }
+          .pomog_brok .carta p:nth-child(1) span::after {
+            content: "";
+            position: absolute;
+            background: url(../images3/CartaBefore1.png) no-repeat;
+            width: 77px;
+            height: 77px;
+            left: 85px;
+            top: -28px; }
+      .pomog_brok .carta p:nth-child(2) {
+        position: absolute;
+        top: -20px;
+        left: 315px; }
+        .pomog_brok .carta p:nth-child(2) span {
+          position: relative; }
+          .pomog_brok .carta p:nth-child(2) span::before {
+            content: "";
+            position: absolute;
+            background: url(../images3/CartaBefore2.png) no-repeat;
+            width: 77px;
+            height: 77px;
+            left: -95px;
+            top: -10px; }
+      .pomog_brok .carta p:nth-child(3) {
+        position: absolute;
+        bottom: 40px;
+        left: 400px; }
+        .pomog_brok .carta p:nth-child(3) span {
+          position: relative; }
+          .pomog_brok .carta p:nth-child(3) span::before {
+            content: "";
+            position: absolute;
+            background: url(../images3/CartaBefore3.png) no-repeat;
+            width: 77px;
+            height: 77px;
+            left: -100px;
+            top: -40px; }
+
+.shagi {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  grid-template-rows: 175px 175px;
+  gap: 30px;
+  margin-bottom: 145px;
+  margin-top: 81px; }
+  .shagi .shag1,
+  .shagi .shag2,
+  .shagi .shag3,
+  .shagi .shag4 {
+    background: #23303F;
+    border: 1px solid rgba(85, 122, 161, 0.6); }
+    .shagi .shag1 p,
+    .shagi .shag2 p,
+    .shagi .shag3 p,
+    .shagi .shag4 p {
+      width: 290px;
+      margin-left: 35px;
+      text-transform: none;
+      font-weight: 500;
+      line-height: 22px;
+      color: #BCC9DA;
+      position: relative; }
+      .shagi .shag1 p:first-child,
+      .shagi .shag2 p:first-child,
+      .shagi .shag3 p:first-child,
+      .shagi .shag4 p:first-child {
+        margin-top: 40px;
+        margin-bottom: 8px;
+        text-align: start;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        color: #9FCCFF; }
+      .shagi .shag1 p:last-child,
+      .shagi .shag2 p:last-child,
+      .shagi .shag3 p:last-child,
+      .shagi .shag4 p:last-child {
+        margin-top: 14px;
+        text-align: start;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        color: #BCC9DA; }
+        .shagi .shag1 p:last-child::before,
+        .shagi .shag2 p:last-child::before,
+        .shagi .shag3 p:last-child::before,
+        .shagi .shag4 p:last-child::before {
+          content: "";
+          height: 50px;
+          width: 1px;
+          background-color: #9FCCFF;
+          position: absolute;
+          top: -35px;
+          left: -36px; }
+
+.shag1 p {
+  position: relative; }
+  .shag1 p:first-child::after {
+    content: "";
+    background: url(../images3/shag1.png) no-repeat;
+    position: absolute;
+    width: 67px;
+    height: 53px;
+    top: -25px;
+    left: 230px; }
+
+.shag2 p {
+  position: relative; }
+  .shag2 p:first-child::after {
+    content: "";
+    background: url(../images3/shag2.png) no-repeat;
+    position: absolute;
+    width: 85px;
+    height: 53px;
+    top: -25px;
+    left: 212px; }
+
+.shag3 p {
+  position: relative; }
+  .shag3 p:first-child::after {
+    content: "";
+    background: url(../images3/shag3.png) no-repeat;
+    position: absolute;
+    width: 85px;
+    height: 53px;
+    top: -25px;
+    left: 212px; }
+
+.shag4 p {
+  position: relative; }
+  .shag4 p:first-child::after {
+    content: "";
+    background: url(../images3/shag4.png) no-repeat;
+    position: absolute;
+    width: 95px;
+    height: 53px;
+    top: -25px;
+    left: 202px; }

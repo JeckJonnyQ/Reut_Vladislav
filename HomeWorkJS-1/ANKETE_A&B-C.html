@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ANKETA_A?B:C</title>
+
+</head>
+
+<body>
+    <script>
+        var firstnameStr = prompt('Введите ваше имя');
+        var firstname = parseFloat(firstnameStr);
+        var firstnameStr = ((firstnameStr == null) && (firstnameStr == '') && (isNaN(firstname)))
+            ? firstnameStr = prompt('Введите ваше имя корректно')
+            : firstname = parseFloat(firstnameStr);
+
+
+        var secondnameStr = prompt('Введите вашу фамилию');
+        var secondname = parseFloat(secondnameStr);
+        var secondnameStr = ((secondnameStr == null) && (secondnameStr == '') && (isNaN(secondname)))
+            ? secondnameStr = prompt('Введите вашу фамилию корректно')
+            : secondname = parseFloat(secondnameStr);
+
+
+        var ageStr = prompt('Введите ваш возраст');
+        var age = parseFloat(ageStr);
+        var ageStr = ((ageStr == null) && (ageStr == '') && (isNaN(age)))
+            ? ageStr = prompt('Введите ваше имя корректно')
+            : age = parseFloat(ageStr);
+
+
+        var agedays = age * 365;
+
+
+        var pol = confirm('Ваш пол мужской?');
+        pol === true ? (pol = 'Мужской') : (pol = 'Женский');
+
+        pol === true ? age >= 63 ? (pens = 'Да') : (pens = 'Нет') : age >= 58 ? (pens = 'Да') : (pens = 'Нет');
+
+        var result = `
+            Ваше Имя: ${firstname}
+            Ваша фамилия: ${secondname}
+            Ваш возраст в годах: ${age}
+            Ваш возраст в днях: ${agedays}
+            Через 5 лет вам будет: ${age + 5}
+            Ваш пол: ${pol}
+            Вы на пенсии: ${pens}
+        `;
+        alert(result);
+    </script>
+</body>
+
+</html>

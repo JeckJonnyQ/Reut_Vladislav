@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>ANKETA_IF</title>
+
+</head>
+
+<body>
+    <script>
+        var firstname = prompt('Введите ваше имя');
+        while (true) {
+            var firstnameStr = parseFloat(firstname);
+            if (firstnameStr == null)
+                firstnameStr = prompt('Введите ваше имя корректно');
+            else if (firstnameStr == '')
+                firstnameStr = prompt('Введите ваше имя корректно');
+            else if (isNaN(firstname))
+                break;
+            firstnameStr = prompt('Введите ваше имя корректно');
+        }
+
+        var secondname = prompt('Введите вашу фамилию');
+        while (true) {
+            var secondnameStr = parseFloat(secondname);
+            if ((secondnameStr == null))
+                secondnameStr = prompt('Введите ваше имя корректно');
+            else if ((secondnameStr == ''))
+                secondnameStr = prompt('Введите ваше имя корректно');
+            else if ((isNaN(secondname)))
+                break;
+            secondnameStr = prompt('Введите ваше имя корректно');
+        }
+
+        var ageStr = prompt('Введите ваш возраст');
+        while (true) {
+            var age = parseFloat(ageStr);
+            if ((ageStr == null))
+                ageStr = prompt('Введите возраст корректно');
+            else if ((ageStr == ''))
+                ageStr = prompt('Введите возраст корректно');
+            else if ((isNaN(age)))
+                ageStr = prompt('Введите возраст корректно');
+            else if ((age <= 100))
+                break;
+            ageStr = prompt('Введите возраст корректно');
+        }
+
+        var agedays = age * 365;
+
+        var pol = confirm('Ваш пол мужской?');
+        if (pol == true) {pol = 'Мужской'}
+        else {pol = 'Женский'};
+
+        var pens;
+        if ((pol === 'Мужской') && (age >= 63))
+            pens = 'Да';
+        else if ((pol === 'Мужской') && (age < 63))
+            pens = 'Нет';
+        else if ((pol === 'Женский') && (age >= 58))
+            pens = 'Да';
+        else
+            pens = 'Нет';
+
+        var result = `
+            Ваше Имя: ${firstname}
+            Ваша фамилия: ${secondname}
+            Ваш возраст в годах: ${age}
+            Ваш возраст в днях: ${agedays}
+            Через 5 лет вам будет: ${age + 5}
+            Ваш пол: ${pol}
+            Вы на пенсии: ${pens}
+        `;
+        alert(result);
+    </script>
+</body>
+
+</html>

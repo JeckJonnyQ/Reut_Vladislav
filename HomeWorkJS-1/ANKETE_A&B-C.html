@@ -19,7 +19,7 @@
                 firstnameStr = prompt('Введите ваше имя корректно') :
                 (firstnameStr == '') ?
                     firstnameStr = prompt('Введите ваше имя корректно') :
-                    (isNaN(firstname))
+                    (!isNaN(firstname))
             break;
             firstnameStr = prompt('Введите ваше имя корректно');
         }
@@ -32,7 +32,7 @@
             secondnameStr = prompt('Введите вашу фамилию корректно')
                 : (secondnameStr == '') ?
                 secondnameStr = prompt('Введите вашу фамилию корректно')
-                    : (isNaN(secondname))
+                    : (!isNaN(secondname))
             break;
             secondnameStr = prompt('Введите вашу фамилию корректно');
         }
@@ -60,9 +60,9 @@
         pol === true ? age >= 63 ? (pens = 'Да') : (pens = 'Нет') : age >= 58 ? (pens = 'Да') : (pens = 'Нет');
 
         var result = `
-            Ваше Имя: ${firstname}
-            Ваша фамилия: ${secondname}
-            Ваш возраст в годах: ${age}
+            Ваше Имя: ${firstnameStr}
+            Ваша фамилия: ${secondnameStr}
+            Ваш возраст в годах: ${ageStr}
             Ваш возраст в днях: ${agedays}
             Через 5 лет вам будет: ${age + 5}
             Ваш пол: ${pol}

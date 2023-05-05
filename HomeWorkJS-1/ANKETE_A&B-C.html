@@ -13,28 +13,46 @@
 <body>
     <script>
         var firstnameStr = prompt('Введите ваше имя');
-        var firstname = parseFloat(firstnameStr);
-        var firstnameStr = ((firstnameStr == null) && (firstnameStr == '') && (isNaN(firstname)))
-            ? firstnameStr = prompt('Введите ваше имя корректно')
-            : firstnameStr = parseFloat(firstnameStr);
+        while (true) {
+            var firstname = parseFloat(firstnameStr);
+            (firstnameStr == null) ?
+                firstnameStr = prompt('Введите ваше имя корректно') :
+                (firstnameStr == '') ?
+                    firstnameStr = prompt('Введите ваше имя корректно') :
+                    (isNaN(firstname))
+            break;
+            firstnameStr = prompt('Введите ваше имя корректно');
+        }
 
 
         var secondnameStr = prompt('Введите вашу фамилию');
-        var secondname = parseFloat(secondnameStr);
-        var secondnameStr = ((secondnameStr == null) && (secondnameStr == '') && (isNaN(secondname)))
-            ? secondnameStr = prompt('Введите вашу фамилию корректно')
-            : secondname = parseFloat(secondnameStr);
-
+        while (true) {
+            var secondname = parseFloat(secondnameStr);
+            (secondnameStr == null) ?
+            secondnameStr = prompt('Введите вашу фамилию корректно')
+                : (secondnameStr == '') ?
+                secondnameStr = prompt('Введите вашу фамилию корректно')
+                    : (isNaN(secondname))
+            break;
+            secondnameStr = prompt('Введите вашу фамилию корректно');
+        }
 
         var ageStr = prompt('Введите ваш возраст');
-        var age = parseFloat(ageStr);
-        var ageStr = ((ageStr == null) && (ageStr == '') && (isNaN(age)))
-            ? ageStr = prompt('Введите ваше имя корректно')
-            : age = parseFloat(ageStr);
+        while (true) {
+            var age = parseFloat(ageStr);
+            (ageStr == null) ?
+                ageStr = prompt('Введите ваш возраст корректно') :
+                (ageStr == '') ?
+                    ageStr = prompt('Введите ваш возраст корректно') :
+                    (isNaN(age)) ?
+                        ageStr = prompt('Введите ваш возраст корректно') :
+                        (age <= 100)
+            break;
+            ageStr = prompt('Введите ваш возраст корректно');
+        }
 
 
         var agedays = age * 365;
-
 
         var pol = confirm('Ваш пол мужской?');
         pol === true ? (pol = 'Мужской') : (pol = 'Женский');

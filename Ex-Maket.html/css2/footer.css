@@ -41,8 +41,32 @@ footer {
         margin-bottom: 10px; }
     .foot .foot_menu ul:nth-child(3) {
       margin-right: 190px; }
-      .foot .foot_menu ul:nth-child(3) li:nth-child(1) {
-        margin-bottom: 10px; }
+      .foot .foot_menu ul:nth-child(3) li {
+        margin-bottom: 10px;
+        padding-left: 32px; }
+        .foot .foot_menu ul:nth-child(3) li:nth-child(1) span {
+          position: relative; }
+          .foot .foot_menu ul:nth-child(3) li:nth-child(1) span::before {
+            content: '';
+            position: absolute;
+            background: url(../images1/icon_tel.png) no-repeat;
+            width: 16px;
+            height: 16px;
+            top: 3px;
+            left: -32px; }
+          .foot .foot_menu ul:nth-child(3) li:nth-child(1) span::after {
+            content: '';
+            position: absolute;
+            background: url(../images1/icon_post.png) no-repeat;
+            width: 16px;
+            height: 12px;
+            top: 40px;
+            left: -32px; }
+        .foot .foot_menu ul:nth-child(3) li a {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          color: #BCC9DA; }
     .foot .foot_menu ul:nth-child(4) li a {
       color: #BCC9DA;
       font-size: 14px; }

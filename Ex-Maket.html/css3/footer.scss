@@ -45,10 +45,45 @@ footer {
             &:nth-child(3) {
                 margin-right: 190px;
 
-                li:nth-child(1) {
+                li {
                     margin-bottom: 10px;
+                    padding-left: 32px;
+
+                    &:nth-child(1) {
+                        span {
+                            position: relative;
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                background: url(../images1/icon_tel.png) no-repeat;
+                                width: 16px;
+                                height: 16px;
+                                top: 3px;
+                                left: -32px;
+                            }
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                background: url(../images1/icon_post.png) no-repeat;
+                                width: 16px;
+                                height: 12px;
+                                top: 40px;
+                                left: -32px;
+                            }
+                        }
+                    }
+
+                    a {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #BCC9DA;
+                    }
                 }
             }
+
 
             &:nth-child(4) {
                 li {

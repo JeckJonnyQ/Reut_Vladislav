@@ -91,18 +91,43 @@
 
     li {
         margin-bottom: 20px;
+        padding-left: 32px;
 
-        p {
-            display: inline;
-            padding-left: 16px;
+        &:nth-child(1) {
+            span {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background: url(../images1/icon_tel.png) no-repeat;
+                    width: 16px;
+                    height: 16px;
+                    top: 3px;
+                    left: -32px;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background: url(../images1/icon_post.png) no-repeat;
+                    width: 16px;
+                    height: 12px;
+                    top: 50px;
+                    left: -32px;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            margin-bottom: 30px;
+        }
+
+        a {
             font-weight: 300;
             font-size: 16px;
             line-height: 26px;
             color: #FFFFFF;
-        }
-
-        &:last-of-type {
-            margin-bottom: 30px;
         }
     }
 }
@@ -112,18 +137,21 @@
     height: 250px;
     margin: 78px 0px 25px 190px;
     overflow: hidden;
+
     .slider_line {
         display: flex;
-        .slider_image{
+
+        .slider_image {
             display: flex;
             width: 540px;
         }
-       
+
         img {
             margin-right: 30px;
         }
     }
 }
+
 button {
     background-color: transparent;
     font-weight: 600;

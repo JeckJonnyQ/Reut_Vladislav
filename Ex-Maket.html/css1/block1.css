@@ -71,16 +71,33 @@
     top: 3px;
     left: -35px; }
   .contacts li {
-    margin-bottom: 20px; }
-    .contacts li p {
-      display: inline;
-      padding-left: 16px;
+    margin-bottom: 20px;
+    padding-left: 32px; }
+    .contacts li:nth-child(1) span {
+      position: relative; }
+      .contacts li:nth-child(1) span::before {
+        content: '';
+        position: absolute;
+        background: url(../images1/icon_tel.png) no-repeat;
+        width: 16px;
+        height: 16px;
+        top: 3px;
+        left: -32px; }
+      .contacts li:nth-child(1) span::after {
+        content: '';
+        position: absolute;
+        background: url(../images1/icon_post.png) no-repeat;
+        width: 16px;
+        height: 12px;
+        top: 50px;
+        left: -32px; }
+    .contacts li:nth-child(2) {
+      margin-bottom: 30px; }
+    .contacts li a {
       font-weight: 300;
       font-size: 16px;
       line-height: 26px;
       color: #FFFFFF; }
-    .contacts li:last-of-type {
-      margin-bottom: 30px; }
 
 .slider {
   width: 540px;

@@ -54,9 +54,10 @@
     }
 
     @keyframes animaBefore {
-        from{
+        from {
             left: -70px;
         }
+
         to {
             left: -100px;
         }
@@ -64,7 +65,7 @@
 
 
     .kudaVezem {
-        background: url(../images1/fonKudavezem.png) no-repeat top 320px right 0px;
+        background: url(../images1/fonKudavezem1.png) no-repeat top 320px right 0px;
         width: 880px;
         display: flex;
         justify-content: center;
@@ -80,6 +81,16 @@
                 margin-left: 70px;
                 position: relative;
 
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-color: #FFFFFF;
+                    width: 50px;
+                    height: 1px;
+                    top: 12px;
+                    left: -70px;
+                }
+
                 &:hover {
                     margin-left: 100px;
                     transition-duration: 2s;
@@ -92,16 +103,6 @@
                         left: -100px;
                         background-color: #227CE4;
                     }
-                }
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    background-color: #FFFFFF;
-                    width: 50px;
-                    height: 1px;
-                    top: 12px;
-                    left: -70px;
                 }
 
                 &:nth-child(1) {

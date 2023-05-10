@@ -42,7 +42,7 @@
   to {
     left: -100px; } }
   .otkudaVezem .kudaVezem {
-    background: url(../images1/fonKudavezem.png) no-repeat top 320px right 0px;
+    background: url(../images1/fonKudavezem1.png) no-repeat top 320px right 0px;
     width: 880px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -61,6 +61,14 @@
         margin-top: 73px;
         margin-left: 70px;
         position: relative; }
+        .otkudaVezem .kudaVezem ul li::before {
+          content: '';
+          position: absolute;
+          background-color: #FFFFFF;
+          width: 50px;
+          height: 1px;
+          top: 12px;
+          left: -70px; }
         .otkudaVezem .kudaVezem ul li:hover {
           margin-left: 100px;
           -webkit-transition-duration: 2s;
@@ -74,13 +82,5 @@
             width: 45%;
             left: -100px;
             background-color: #227CE4; }
-        .otkudaVezem .kudaVezem ul li::before {
-          content: '';
-          position: absolute;
-          background-color: #FFFFFF;
-          width: 50px;
-          height: 1px;
-          top: 12px;
-          left: -70px; }
         .otkudaVezem .kudaVezem ul li:nth-child(1) {
           margin-top: 0px; }

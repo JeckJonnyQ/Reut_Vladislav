@@ -170,6 +170,7 @@
     display: flex;
 
     li {
+        color: #FFFFFF;
         &:nth-child(1) {
             margin-right: 195px;
             margin-bottom: 70px;
@@ -185,9 +186,6 @@
         }
         &:nth-child(5){
             margin-right: 170px;
-        }
-        &:active{
-            color: #FFFFFF;
         }
     }
 }

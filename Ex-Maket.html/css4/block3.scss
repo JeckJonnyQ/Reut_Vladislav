@@ -27,3 +27,74 @@
         color: #FFFFFF;
     }
 }
+
+
+.block-for-slider {
+    width: 1529px;
+    height: 255px;
+    margin-top: 120px;
+
+    .viewport {
+        width: 1529px;
+        height: 255px;
+        overflow: hidden;
+
+        .slidewrapper {
+            display: flex;
+            transition: 1s;
+            transition-timing-function: ease;
+
+            .slider_image {
+                height: 255px;
+            }
+        }
+    }
+}
+
+.nav-btns {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+
+    .slide-nav-btn {
+        width: 20px;
+        height: 20px;
+        background-color: #23303F;
+        margin: 3px;
+
+        &:hover {
+            background-color: #227CE4;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.prev-next-btns{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.prev-btn {
+    position: absolute;
+    background: url(../images4/slayderNext.png) no-repeat;
+    transform: rotate(180deg);
+    width: 25px;
+    height: 25px;
+    top: -33px;
+}
+.next-btn {
+    position: absolute;
+    background: url(../images4/slayderNext.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    top: -20px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    cursor: pointer;
+}
+.next-btn {
+    right: 0px;
+}

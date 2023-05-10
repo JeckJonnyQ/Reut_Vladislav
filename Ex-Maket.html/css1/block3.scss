@@ -1,5 +1,7 @@
 .block3 {
-    background: url(../images1/Fon_block3.png) no-repeat;
+    background: url(../images1/Fon_block3b.png) no-repeat top 100px right 50px,
+        url(../images1/Fon_block3a.png) no-repeat;
+    ;
     padding-top: 1px;
     padding-bottom: 1px;
 }
@@ -11,38 +13,101 @@
     color: #FFFFFF;
 }
 
-.vezem {
-    width: 570px;
+.otkudaVezem {
+    display: flex;
 
-    p {
+    .vezem {
+        width: 570px;
+        margin-right: 80px;
 
-        &:first-child {
-            margin-top: 120px;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 15px;
-            text-transform: uppercase;
-            color: #9FCCFF;
-            opacity: 0.7;
-        }
+        p {
 
-        &:last-of-type {
-            span {
-                font-weight: 600px;
-                color: #FFFFFF;
+            &:first-child {
+                margin-top: 120px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 15px;
+                text-transform: uppercase;
+                color: #9FCCFF;
+                opacity: 0.7;
             }
 
+            &:last-of-type {
+                span {
+                    font-weight: 600px;
+                    color: #FFFFFF;
+                }
+
+            }
+        }
+
+        h2 {
+            @include h2;
+            margin-top: 20px;
+            margin-bottom: 55px;
+        }
+
+        button {
+            margin-top: 90px;
+            margin-bottom: 120px;
         }
     }
 
-    h2 {
-        @include h2;
-        margin-top: 20px;
-        margin-bottom: 55px;
+    @keyframes animaBefore {
+        from{
+            left: -70px;
+        }
+        to {
+            left: -100px;
+        }
     }
 
-    button {
-        margin-top: 90px;
-        margin-bottom: 120px;
+
+    .kudaVezem {
+        background: url(../images1/fonKudavezem.png) no-repeat top 320px right 0px;
+        width: 880px;
+        display: flex;
+        justify-content: center;
+
+        ul {
+            width: 300px;
+            height: 505px;
+            transform-origin: 150px 150px;
+            transform: rotate(90deg);
+
+            li {
+                margin-top: 73px;
+                margin-left: 70px;
+                position: relative;
+
+                &:hover {
+                    margin-left: 100px;
+                    transition-duration: 2s;
+                    color: #227CE4;
+
+                    &::before {
+                        animation: animaBefore;
+                        transition-duration: 2s;
+                        width: 45%;
+                        left: -100px;
+                        background-color: #227CE4;
+                    }
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-color: #FFFFFF;
+                    width: 50px;
+                    height: 1px;
+                    top: 12px;
+                    left: -70px;
+                }
+
+                &:nth-child(1) {
+                    margin-top: 0px;
+                }
+            }
+        }
     }
 }

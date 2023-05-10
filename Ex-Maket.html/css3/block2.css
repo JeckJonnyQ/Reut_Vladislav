@@ -12,6 +12,21 @@
     line-height: 46px;
     color: #FFFFFF; }
 
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg) translateX(210px) rotate(0deg);
+            transform: rotate(0deg) translateX(210px) rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg) translateX(210px) rotate(-360deg);
+            transform: rotate(360deg) translateX(210px) rotate(-360deg); } }
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg) translateX(210px) rotate(0deg);
+            transform: rotate(0deg) translateX(210px) rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg) translateX(210px) rotate(-360deg);
+            transform: rotate(360deg) translateX(210px) rotate(-360deg); } }
 .pomog_brok {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,6 +43,19 @@
     border-radius: 50%;
     position: relative;
     background: url(../images3/karta.png) no-repeat top 130px left 45px; }
+    .pomog_brok .carta::before {
+      position: absolute;
+      content: '';
+      background-color: #9FCCFF;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      top: 203px;
+      left: 203px; }
+    .pomog_brok .carta:before {
+      display: initial;
+      -webkit-animation: spin 18s infinite linear;
+              animation: spin 18s infinite linear; }
     .pomog_brok .carta:hover {
       background: url(../images3/karta1.png) no-repeat top 130px left 45px; }
     .pomog_brok .carta p {

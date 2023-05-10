@@ -27,8 +27,15 @@
                     <li><a href="NashiSkladu.html">Наши склады</a></li>
                     <li><a href="Brokeru.html">Брокерам</a></li>
                     <li><a href="Kontacts.html">Контакты</a></li>
-                    <button class="droplang">RU</button>
                 </ul>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Ru</button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#">Kz</a>
+                        <a href="#">Eng</a>
+                        <a href="#">Es</a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -58,12 +65,18 @@
             <div class="block-for-slider" id="block-for-slider">
                 <div class="viewport" id="viewport">
                     <div class="slidewrapper" id="slidewrapper">
-                        <div class="slider_image"><img src="images1/flower1.png"><img src="images1/flower1.png"><img src="images1/flower1.png"></div>
-                        <div class="slider_image"><img src="images1/flower2.png"><img src="images1/flower2.png"><img src="images1/flower2.png"></div>
-                        <div class="slider_image"><img src="images1/flower2.png"><img src="images1/flower2.png"><img src="images1/flower2.png"></div>
-                        <div class="slider_image"><img src="images1/flower2.png"><img src="images1/flower2.png"><img src="images1/flower2.png"></div>
-                        <div class="slider_image"><img src="images1/flower2.png"><img src="images1/flower2.png"><img src="images1/flower2.png"></div>
-                        <div class="slider_image"><img src="images1/flower2.png"><img src="images1/flower2.png"><img src="images1/flower2.png"></div>
+                        <div class="slider_image"><img src="images1/flower1.png"><img src="images1/flower2.png"><img
+                                src="images1/flower3.png"></div>
+                        <div class="slider_image"><img src="images1/flower1.png"><img src="images1/flower2.png"><img
+                                src="images1/flower3.png"></div>
+                        <div class="slider_image"><img src="images1/flower1.png"><img src="images1/flower2.png"><img
+                                src="images1/flower3.png"></div>
+                        <div class="slider_image"><img src="images1/flower1.png"><img src="images1/flower2.png"><img
+                                src="images1/flower3.png"></div>
+                        <div class="slider_image"><img src="images1/flower1.png"><img src="images1/flower2.png"><img
+                                src="images1/flower3.png"></div>
+                        <div class="slider_image"><img src="images1/flower1.png"><img src="images1/flower2.png"><img
+                                src="images1/flower3.png"></div>
                     </div>
 
                     <ul class="nav-btns" id="nav-btns">
@@ -114,7 +127,7 @@
 
     <div class="block3">
         <div class="container">
-            <div>
+            <div class="otkudaVezem">
                 <div class="vezem">
                     <p>Flower Fracht Karaganda </p>
                     <h2>Откуда мы везем наши цветы?</h2>
@@ -132,7 +145,16 @@
                     <button class="btn">Связаться с нами</button>
                 </div>
 
-                <div></div>
+                <div class="kudaVezem">
+                    <ul>
+                        <li>Isr</li>
+                        <li>Holl</li>
+                        <li>Cl</li>
+                        <li>Co</li>
+                        <li>Ke</li>
+                        <li>Ecuador</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -166,7 +188,7 @@
                     <p>Доставка заказа осуществляется до двери</p>
                 </div>
                 <div class="boxmid">
-                    <button class="btn">Скачать прайс</button>
+                    <a href="404.html"><button class="btn">Скачать прайс</button></a>
                 </div>
                 <div class="box">
                     <p>от 3.6$/1 кг</p>
@@ -231,8 +253,10 @@
         </div>
     </footer>
 
+
     <script src="JQuery/jquery-3.6.4.min.js"></script>
     <script src="JS/slayder.js"></script>
+    <script src="JS/dropbutton.js"></script>
 
 </body>
 

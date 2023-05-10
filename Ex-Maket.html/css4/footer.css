@@ -42,8 +42,7 @@ footer {
     .foot .foot_menu ul:nth-child(3) {
       margin-right: 190px; }
       .foot .foot_menu ul:nth-child(3) li {
-        margin-bottom: 10px;
-        padding-left: 32px; }
+        margin-bottom: 10px; }
         .foot .foot_menu ul:nth-child(3) li:nth-child(1) span {
           position: relative; }
           .foot .foot_menu ul:nth-child(3) li:nth-child(1) span::before {
@@ -67,11 +66,14 @@ footer {
           font-size: 14px;
           line-height: 24px;
           color: #BCC9DA; }
-    .foot .foot_menu ul:nth-child(4) li a {
-      color: #BCC9DA;
+    .foot .foot_menu ul:nth-child(4) {
       font-size: 14px; }
-    .foot .foot_menu ul:nth-child(4) li:nth-child(1) {
-      margin-bottom: 10px; }
+      .foot .foot_menu ul:nth-child(4) li:nth-child(1) {
+        margin-bottom: 10px; }
+      .foot .foot_menu ul:nth-child(4) li a {
+        font-size: 14px;
+        line-height: 24px;
+        color: #BCC9DA; }
 
 .foot_menu .contacts {
   margin-top: 0px;
@@ -82,7 +84,8 @@ footer {
     margin-bottom: 0px; }
     .foot_menu .contacts li p {
       display: inline;
-      padding-left: 12px;
+      padding-left: 16px;
+      font-weight: 300px;
       font-size: 14px;
       color: #BCC9DA; }
     .foot_menu .contacts li:last-child {

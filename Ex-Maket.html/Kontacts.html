@@ -25,8 +25,15 @@
                     <li><a href="NashiSkladu.html">Наши склады</a></li>
                     <li><a href="Brokeru.html">Брокерам</a></li>
                     <li><a href="Kontacts.html">Контакты</a></li>
-                    <button class="droplang">RU</button>
                 </ul>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Ru</button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#">Kz</a>
+                        <a href="#">Eng</a>
+                        <a href="#">Es</a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -62,7 +69,8 @@
                 </div>
 
                 <div class="map">
-                    <iframe src="https://yandex.by/map-widget/v1/?ll=73.088381%2C49.800488&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg2NzQyNTA3MxJS0prQsNC30LDSm9GB0YLQsNC9LCDSmtCw0YDQsNKT0LDQvdC00YssINCR0rHSm9Cw0YAg0JbRi9GA0LDRgyDQtNCw0qPSk9GL0LvRiywgNTkvMiIKDeUskkIVizNHQg%2C%2C&z=15.75"
+                    <iframe
+                        src="https://yandex.by/map-widget/v1/?ll=73.088381%2C49.800488&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg2NzQyNTA3MxJS0prQsNC30LDSm9GB0YLQsNC9LCDSmtCw0YDQsNKT0LDQvdC00YssINCR0rHSm9Cw0YAg0JbRi9GA0LDRgyDQtNCw0qPSk9GL0LvRiywgNTkvMiIKDeUskkIVizNHQg%2C%2C&z=15.75"
                         frameborder="0" allowfullscreen="true"></iframe>
                 </div>
             </div>
@@ -73,7 +81,27 @@
         <div class="container">
             <p>Flower Fracht Karaganda</p>
             <h2>Группы продаж</h2>
-            
+
+            <div class="block-for-slider" id="block-for-slider">
+                <div class="viewport" id="viewport">
+                    <div class="slidewrapper" id="slidewrapper">
+                        <div class="slider_image"><img src="images4/slayderContacts.png" alt=""></div>
+                        <div class="slider_image"><img src="images4/slayderContacts.png" alt=""></div>
+                        <div class="slider_image"><img src="images4/slayderContacts.png" alt=""></div>
+                    </div>
+                </div>
+
+                <ul class="nav-btns" id="nav-btns">
+                    <li class="slide-nav-btn"></li>
+                    <li class="slide-nav-btn"></li>
+                    <li class="slide-nav-btn"></li>
+                </ul>
+
+                <div class="prev-next-btns" id="prev-next-btns">
+                    <div class="prev-btn" id="prev-btn"></div>
+                    <div class="next-btn" id="next-btn"></div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -139,7 +167,7 @@
         </div>
     </footer>
 
-
-
-
+    <script src="JQuery/jquery-3.6.4.min.js"></script>
+    <script src="JS/slayder.js"></script>
+    <script src="JS/dropbutton.js"></script>
 </body>

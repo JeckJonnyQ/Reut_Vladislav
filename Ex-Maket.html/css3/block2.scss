@@ -29,6 +29,17 @@
     }
 }
 
+@keyframes spin {
+    from {
+        transform: rotate(0deg) translateX(210px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(210px) rotate(-360deg);
+        
+    }
+}
+
 .pomog_brok {
     display: flex;
     justify-content: space-between;
@@ -42,6 +53,22 @@
         border-radius: 50%;
         position: relative;
         background: url(../images3/karta.png) no-repeat top 130px left 45px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            background-color: #9FCCFF;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            top: 203px;
+            left: 203px;
+        }
+        
+        &:before{
+            display: initial;
+            animation: spin 18s infinite linear;
+        }
 
         &:hover {
             background: url(../images3/karta1.png) no-repeat top 130px left 45px;

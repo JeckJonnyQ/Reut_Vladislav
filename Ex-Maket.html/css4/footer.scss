@@ -47,7 +47,6 @@ footer {
 
                 li {
                     margin-bottom: 10px;
-                    padding-left: 32px;
 
                     &:nth-child(1) {
                         span {
@@ -84,16 +83,18 @@ footer {
                 }
             }
 
-
             &:nth-child(4) {
-                li {
-                    a {
-                        color: #BCC9DA;
-                        font-size: 14px;
-                    }
+                font-size: 14px;
 
+                li {
                     &:nth-child(1) {
                         margin-bottom: 10px;
+                    }
+
+                    a {
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #BCC9DA;
                     }
                 }
             }
@@ -115,7 +116,8 @@ footer {
 
             p {
                 display: inline;
-                padding-left: 12px;
+                padding-left: 16px;
+                font-weight: 300px;
                 font-size: 14px;
                 color: #BCC9DA;
             }

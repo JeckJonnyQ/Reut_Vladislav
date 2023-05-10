@@ -6,7 +6,7 @@ header {
 .head {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: right;
 
     ul {
         display: flex;
@@ -49,4 +49,66 @@ header {
     display: flex;
     align-items: center;
     height: 70px;
+    margin-right: 623px;
+}
+
+
+/* Кнопка выпадающего списка */
+.dropbtn {
+    background-color: transparent;
+    color: #FFFFFF;
+    width: 46px;
+    height: 46px;
+    padding: 5px;
+    font-size: 14px;
+    border: solid 1px #80828D;
+    ;
+    cursor: pointer;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.dropbtn:hover {
+    background-color: #b4b7b9;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+    position: relative;
+    // display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    max-width: 46px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+    color: #fff;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    display: block;
+    &:nth-child(2){
+        padding: 14px 10px;
+    }
+    &:hover {
+        border: solid 0.5px #80828D;
+    }
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс 
+.dropdown-content содержимого, когда пользователь нажимает на кнопку
+выпадающего списка) */
+.show {
+    display: block;
 }

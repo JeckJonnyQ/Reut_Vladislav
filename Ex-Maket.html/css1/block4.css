@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .block4 {
   background: url(../images1/Fon_block4a.png) no-repeat, url(../images1/Fon_block4b.png) no-repeat left -570px top 380px, url(../images1/Fon_block4c.png) no-repeat right -490px top 35px;
   background-color: #16212E;
@@ -15,10 +16,9 @@
     width: 880px;
     height: 558px;
     margin: 120px 80px 120px 0px;
-    background: url(../images1/Fon_block4d.png) no-repeat 0px 0px;
-    background-color: #23303F;
+    background: url(../images1/Fon_block4d.png) no-repeat;
     border: 1px solid rgba(85, 122, 161, 0.6); }
-  .culc_dost .culculate p:first-child {
+  .culc_dost .culculate p {
     margin-top: 120px;
     font-weight: 500;
     font-size: 12px;
@@ -27,8 +27,6 @@
     text-transform: uppercase;
     color: #9FCCFF;
     opacity: 0.7; }
-  .culc_dost .culculate p:nth-child(3) {
-    margin-bottom: 40px; }
   .culc_dost .culculate h2 {
     font-weight: 600;
     font-size: 50px;
@@ -36,3 +34,124 @@
     color: #FFFFFF;
     margin-top: 20px;
     margin-bottom: 55px; }
+
+.elemAccordeon {
+  margin: 10px 0; }
+  .elemAccordeon .headingElem {
+    display: block;
+    width: 100%;
+    padding: 10px 10px 30px 60px;
+    background: transparent;
+    color: #fff; }
+  .elemAccordeon .descElem {
+    display: none;
+    padding: 20px 10px 20px 43px; }
+
+/*класс active мы будум добавлять для элементов на которые нажал пользователь*/
+.descElem.active {
+  display: block;
+  overflow: initial; }
+
+span.first {
+  position: relative; }
+  span.first::before {
+    content: '01';
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: -15px;
+    left: -60px;
+    border: 1px solid #BCC9DA;
+    color: #9FCCFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+span.second {
+  position: relative; }
+  span.second::before {
+    content: '02';
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: -3px;
+    left: -60px;
+    border: 1px solid #BCC9DA;
+    color: #9FCCFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+ul.stranuDoctavki {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 570px; }
+  ul.stranuDoctavki li {
+    width: 285px;
+    margin-bottom: 20px; }
+    ul.stranuDoctavki li:last-of-type {
+      margin-bottom: 0px; }
+    ul.stranuDoctavki li label {
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      position: relative;
+      color: #FFFFFF;
+      font-size: 16px;
+      line-height: 24px; }
+      ul.stranuDoctavki li label:before {
+        content: '';
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        border: 1px solid rgba(34, 124, 228, 0.36);
+        border-radius: 50%;
+        top: -3px;
+        left: -30px; }
+    ul.stranuDoctavki li input[type="radio"] {
+      display: none;
+      margin-right: 10px; }
+    ul.stranuDoctavki li input:checked + label::before {
+      content: '';
+      background: url(../images1/RadioButtonActive.png) no-repeat;
+      background-size: 22px; }
+
+.dniNedeli label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+  margin-right: 60px; }
+  .dniNedeli label:before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border: 1px solid rgba(34, 124, 228, 0.36);
+    border-radius: 50%;
+    top: -3px;
+    left: -30px; }
+.dniNedeli input[type="radio"] {
+  display: none;
+  margin-right: 10px; }
+.dniNedeli input:checked + label::before {
+  content: '';
+  background: url(../images1/RadioButtonActive.png) no-repeat;
+  background-size: 22px; }

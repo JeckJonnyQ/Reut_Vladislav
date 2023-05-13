@@ -13,6 +13,16 @@
     color: #FFFFFF;
 }
 
+@keyframes animaBefore {
+    from {
+        left: -70px;
+    }
+
+    to {
+        left: -100px;
+    }
+}
+
 .otkudaVezem {
     display: flex;
 
@@ -53,20 +63,9 @@
         }
     }
 
-    @keyframes animaBefore {
-        from {
-            left: -70px;
-        }
-
-        to {
-            left: -100px;
-        }
-    }
-
-
     .kudaVezem {
-        background: url(../images1/fonKudavezem1.png) no-repeat top 320px right 0px;
         width: 880px;
+        background: url(../images1/fonKudaIsr.png) no-repeat top 280px right 0px;
         display: flex;
         justify-content: center;
 
@@ -79,6 +78,7 @@
             li {
                 margin-top: 73px;
                 margin-left: 70px;
+                text-transform: uppercase;
                 position: relative;
 
                 &::before {
@@ -111,4 +111,34 @@
             }
         }
     }
+}
+
+.kudaVezem:has(ul li:first-child:hover) {
+    background: none;
+    background: url(../images1/fonKudaIsr.png) no-repeat top 280px right 0px;
+}
+.kudaVezem:has(ul li:nth-child(2):hover) {
+    background: none;
+    background: url(../images1/fonKudaHoll.png) no-repeat top 280px right 0px;
+    transition-duration: 2s;
+}
+.kudaVezem:has(ul li:nth-child(3):hover) {
+    background: none;
+    background: url(../images1/fonKudaCl.png) no-repeat top 280px right 0px;
+    transition-duration: 2s;
+}
+.kudaVezem:has(ul li:nth-child(4):hover) {
+    background: none;
+    background: url(../images1/fonKudaCol.png) no-repeat top 280px right 0px;
+    transition-duration: 2s;
+}
+.kudaVezem:has(ul li:nth-child(5):hover) {
+    background: none;
+    background: url(../images1/fonKudaKe.png) no-repeat top 280px right 0px;
+    transition-duration: 2s;
+}
+.kudaVezem:has(ul li:nth-child(6):hover) {
+    background: none;
+    background: url(../images1/fonKudaEcuador.png) no-repeat top 280px right 0px;
+    transition-duration: 2s;
 }

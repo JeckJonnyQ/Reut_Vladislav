@@ -154,6 +154,7 @@
                         <li>Ke</li>
                         <li>Ecuador</li>
                     </ul>
+                    <div class="bg"></div>
                 </div>
             </div>
         </div>
@@ -162,15 +163,88 @@
     <div class="block4">
         <div class="container">
             <div class="culc_dost">
-                <div class="dostavka">
-                    <p>asdada</p>
-                </div>
+                <div class="dostavka"></div>
+
                 <div class="culculate">
                     <p>Flower Fracht Karaganda</p>
                     <h2>Калькулятор<br>доставки</h2>
-                    <p>Выберите страну по которой хотите узнать время доставки</p>
-                    <p>Что бы рассчитать дату доставки выберите день когда планируете сделать заказ</p>
+
+                    <div class="accordeonWrapper type_1">
+                        <div class="elemAccordeon">
+
+                            <div class="headingElem">
+                                <span class="first">Выберите страну по которой хотите узнать время доставки</span>
+                            </div>
+
+                            <div class="descElem">
+                                <ul class="stranuDoctavki">
+                                    <li>
+                                        <input type="radio" id="ecuador">
+                                        <label for="ecuador">Эквадор</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="ezrail">
+                                        <label for="ezrail">Израиль</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="kenya">
+                                        <label for="kenya">Кения</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="holland">
+                                        <label for="holland">Голландия</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="columb">
+                                        <label for="columb">Колумбия</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="spain">
+                                        <label for="spain">Испания</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="chili">
+                                        <label for="chili">Чили</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="elemAccordeon">
+
+                            <div class="headingElem">
+                                <span class="second">Что бы рассчитать дату доставки выберите день когда планируете
+                                    сделать заказ</span>
+                            </div>
+
+                            <div class="descElem">
+                                <div class="dniNedeli">
+                                    <input type="radio" id="checkPon">
+                                    <label for="checkPon">Пн</label>
+
+                                    <input type="radio" id="checkVtor">
+                                    <label for="checkVtor">Вт</label>
+
+                                    <input type="radio" id="checkSred">
+                                    <label for="checkSred">Ср</label>
+
+                                    <input type="radio" id="checkChet">
+                                    <label for="checkChet">Чт</label>
+
+                                    <input type="radio" id="checkPatn">
+                                    <label for="checkPatn">Пт</label>
+
+                                    <input type="radio" id="checkSub">
+                                    <label for="checkSub">Сб</label>
+
+                                    <input type="radio" id="checkVosk">
+                                    <label for="checkVosk">Вс</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -257,6 +331,7 @@
     <script src="JQuery/jquery-3.6.4.min.js"></script>
     <script src="JS/slayder.js"></script>
     <script src="JS/dropbutton.js"></script>
+    <script src="JS/accord.js"></script>
 
 </body>
 

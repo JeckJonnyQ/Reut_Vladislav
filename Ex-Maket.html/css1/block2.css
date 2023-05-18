@@ -152,3 +152,178 @@
     height: 82px;
     top: 5px;
     left: -80px; }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 965px; }
+
+  .block2 {
+    background: url(../images1/Fon_block2a.png) no-repeat, url(../images1/Fon_block2b.png) no-repeat -265px 60px;
+    background-color: #16212E; }
+
+  .block2 p {
+    margin-top: 63px;
+    font-size: 10px;
+    line-height: 12px; }
+  .block2 h2 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 32px;
+    line-height: 60px;
+    color: #FFFFFF; }
+
+  .cifra {
+    grid-template-columns: 310px 310px 310px;
+    grid-template-rows: 138px 138px;
+    gap: 17px;
+    margin-bottom: 60px; }
+    .cifra .year p,
+    .cifra .weight p,
+    .cifra .procent p,
+    .cifra .countries p,
+    .cifra .grad p,
+    .cifra .clients p {
+      width: 220px;
+      margin-left: 81px;
+      text-transform: none;
+      font-weight: 500;
+      color: #BCC9DA;
+      position: relative; }
+      .cifra .year p:first-child,
+      .cifra .weight p:first-child,
+      .cifra .procent p:first-child,
+      .cifra .countries p:first-child,
+      .cifra .grad p:first-child,
+      .cifra .clients p:first-child {
+        margin-top: 29px;
+        margin-bottom: 6px;
+        font-size: 25px;
+        line-height: 30px; }
+      .cifra .year p:last-child,
+      .cifra .weight p:last-child,
+      .cifra .procent p:last-child,
+      .cifra .countries p:last-child,
+      .cifra .grad p:last-child,
+      .cifra .clients p:last-child {
+        font-size: 13px;
+        line-height: 20px; }
+        .cifra .year p:last-child::before,
+        .cifra .weight p:last-child::before,
+        .cifra .procent p:last-child::before,
+        .cifra .countries p:last-child::before,
+        .cifra .grad p:last-child::before,
+        .cifra .clients p:last-child::before {
+          height: 50px;
+          width: 1px;
+          top: -25px;
+          left: -82px; }
+
+  .year p:first-child::before {
+    background: url(../images1/year.png) no-repeat;
+    background-size: cover;
+    width: 38px;
+    height: 52px;
+    top: 10px;
+    left: -60px; }
+
+  .weight p:first-child::before {
+    background: url(../images1/weight.png) no-repeat;
+    background-size: cover;
+    width: 38px;
+    height: 52px;
+    top: 10px;
+    left: -60px; }
+
+  .procent p:first-child::before {
+    background: url(../images1/procent.png) no-repeat;
+    background-size: cover;
+    width: 38px;
+    height: 52px;
+    top: 10px;
+    left: -60px; }
+
+  .countries p:first-child::before {
+    background: url(../images1/countries.png) no-repeat;
+    background-size: cover;
+    width: 38px;
+    height: 52px;
+    top: 10px;
+    left: -60px; }
+
+  .grad p:first-child::before {
+    background: url(../images1/grad.png) no-repeat;
+    background-size: cover;
+    width: 38px;
+    height: 52px;
+    top: 10px;
+    left: -60px; }
+
+  .clients p:first-child::before {
+    background: url(../images1/clients.png) no-repeat;
+    background-size: cover;
+    width: 38px;
+    height: 52px;
+    top: 10px;
+    left: -60px; } }
+@media screen and (max-width: 320px) {
+  .block2 {
+    background: none;
+    background-color: #16212E;
+    opacity: 0.99; }
+    .block2 .container {
+      width: 290px; }
+      .block2 .container p {
+        margin-top: 60px;
+        font-size: 8px;
+        line-height: 10px; }
+      .block2 .container h2 {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 28px;
+        line-height: 32px; }
+    .block2 .cifra {
+      grid-template-columns: 290px;
+      grid-template-rows: 123px 123px 123px 123px 123px 123px;
+      gap: 15px;
+      margin-bottom: 60px; }
+      .block2 .cifra .year p,
+      .block2 .cifra .weight p,
+      .block2 .cifra .procent p,
+      .block2 .cifra .countries p,
+      .block2 .cifra .grad p,
+      .block2 .cifra .clients p {
+        width: 220px;
+        margin-left: 75px;
+        text-transform: none;
+        font-weight: 500;
+        color: #BCC9DA;
+        position: relative; }
+        .block2 .cifra .year p:first-child,
+        .block2 .cifra .weight p:first-child,
+        .block2 .cifra .procent p:first-child,
+        .block2 .cifra .countries p:first-child,
+        .block2 .cifra .grad p:first-child,
+        .block2 .cifra .clients p:first-child {
+          margin-top: 24px;
+          margin-bottom: 8px;
+          font-size: 22px;
+          line-height: 27px;
+          color: #9FCCFF; }
+        .block2 .cifra .year p:last-child,
+        .block2 .cifra .weight p:last-child,
+        .block2 .cifra .procent p:last-child,
+        .block2 .cifra .countries p:last-child,
+        .block2 .cifra .grad p:last-child,
+        .block2 .cifra .clients p:last-child {
+          font-size: 13px;
+          line-height: 20px; }
+          .block2 .cifra .year p:last-child::before,
+          .block2 .cifra .weight p:last-child::before,
+          .block2 .cifra .procent p:last-child::before,
+          .block2 .cifra .countries p:last-child::before,
+          .block2 .cifra .grad p:last-child::before,
+          .block2 .cifra .clients p:last-child::before {
+            height: 50px;
+            width: 1px;
+            top: -25px;
+            left: -76px; } }

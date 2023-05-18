@@ -1,7 +1,7 @@
 .block1 {
     background: url(../images5/Fon_block1b.png) no-repeat left 160px top 100px,
-                url(../images5/Fon_block1c.png) no-repeat right 120px top 605px,
-                url(../images5/Fon_block1a.png) no-repeat;
+        url(../images5/Fon_block1c.png) no-repeat right 120px top 605px,
+        url(../images5/Fon_block1a.png) no-repeat;
     padding-top: 1px;
     padding-bottom: 1px;
 
@@ -59,4 +59,55 @@
         justify-content: center;
         margin-bottom: 126px;
     }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 965px;
+    }
+
+    .block1 {
+        background: url(../images5/Fon_block1a1024.png) no-repeat;
+
+        p {
+            margin-top: 90px;
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        h2 {
+            margin-top: 0px;
+            margin-bottom: 30px;
+            font-size: 200px;
+            line-height: 244px;
+
+            span {
+                position: relative;
+
+                &::before {
+                    top: 250px;
+                    left: 172px;
+                }
+            }
+        }
+
+        h3 {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+
+            &:last-of-type {
+                margin-top: 10px;
+                margin-bottom: 45px;
+            }
+        }
+
+        .btn_center {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 73px;
+        }
+    }
+
 }

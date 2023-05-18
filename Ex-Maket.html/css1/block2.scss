@@ -1,7 +1,7 @@
 .block2 {
     background: url(../images1/Fon_block2a.png) no-repeat,
-                url(../images1/Fon_block2b.png) no-repeat -575px 20px,
-                url(../images1/Fon_block2c.png) no-repeat right -550px top 450px;
+        url(../images1/Fon_block2b.png) no-repeat -575px 20px,
+        url(../images1/Fon_block2c.png) no-repeat right -550px top 450px;
     background-color: #16212E;
     padding-bottom: 1px;
     padding-top: 1px;
@@ -197,6 +197,252 @@
                 height: 82px;
                 top: 5px;
                 left: -80px;
+            }
+        }
+    }
+}
+
+// Медиа 1024 
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 965px;
+    }
+
+    .block2 {
+        background: url(../images1/Fon_block2a.png) no-repeat,
+            url(../images1/Fon_block2b.png) no-repeat -265px 60px;
+        background-color: #16212E;
+    }
+
+    @mixin h2 {
+        font-size: 32px;
+        line-height: 60px;
+        color: #FFFFFF;
+    }
+
+    @mixin b2before {
+        &::before {
+            height: 50px;
+            width: 1px;
+            top: -25px;
+            left: -82px;
+        }
+    }
+
+    .block2 {
+        p {
+            margin-top: 63px;
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        h2 {
+            margin-top: 0px;
+            margin-bottom: 15px;
+            @include h2;
+        }
+    }
+
+    .cifra {
+        grid-template-columns: 310px 310px 310px;
+        grid-template-rows: 138px 138px;
+        gap: 17px;
+        margin-bottom: 60px;
+
+        .year,
+        .weight,
+        .procent,
+        .countries,
+        .grad,
+        .clients {
+
+            p {
+                width: 220px;
+                margin-left: 81px;
+                text-transform: none;
+                font-weight: 500;
+                color: #BCC9DA;
+                position: relative;
+
+                &:first-child {
+                    margin-top: 29px;
+                    margin-bottom: 6px;
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+
+                &:last-child {
+                    font-size: 13px;
+                    line-height: 20px;
+                    @include b2before;
+                }
+            }
+        }
+    }
+
+    .year {
+        p {
+            &:first-child {
+                &::before {
+                    background: url(../images1/year.png) no-repeat;
+                    background-size: cover;
+                    width: 38px;
+                    height: 52px;
+                    top: 10px;
+                    left: -60px;
+                }
+            }
+        }
+    }
+
+    .weight {
+        p {
+            &:first-child {
+                &::before {
+                    background: url(../images1/weight.png) no-repeat;
+                    background-size: cover;
+                    width: 38px;
+                    height: 52px;
+                    top: 10px;
+                    left: -60px;
+                }
+            }
+        }
+    }
+
+    .procent {
+        p {
+            &:first-child {
+                &::before {
+                    background: url(../images1/procent.png) no-repeat;
+                    background-size: cover;
+                    width: 38px;
+                    height: 52px;
+                    top: 10px;
+                    left: -60px;
+                }
+            }
+        }
+    }
+
+    .countries {
+        p {
+            &:first-child {
+                &::before {
+                    background: url(../images1/countries.png) no-repeat;
+                    background-size: cover;
+                    width: 38px;
+                    height: 52px;
+                    top: 10px;
+                    left: -60px;
+                }
+            }
+        }
+    }
+
+    .grad {
+        p {
+            &:first-child {
+                &::before {
+                    background: url(../images1/grad.png) no-repeat;
+                    background-size: cover;
+                    width: 38px;
+                    height: 52px;
+                    top: 10px;
+                    left: -60px;
+                    ;
+                }
+            }
+        }
+    }
+
+    .clients {
+        p {
+            &:first-child {
+                &::before {
+                    background: url(../images1/clients.png) no-repeat;
+                    background-size: cover;
+                    width: 38px;
+                    height: 52px;
+                    top: 10px;
+                    left: -60px;
+                }
+            }
+        }
+    }
+}
+
+// Медиа 320
+
+@media screen and (max-width: 320px) {
+
+    .block2 {
+        background: none;
+        background-color: #16212E;
+        opacity: 0.99;
+
+        @mixin b2before {
+            &::before {
+                height: 50px;
+                width: 1px;
+                top: -25px;
+                left: -76px;
+            }
+        }
+
+        .container {
+            width: 290px;
+
+            p {
+                margin-top: 60px;
+                font-size: 8px;
+                line-height: 10px;
+            }
+
+            h2 {
+                margin-top: 10px;
+                margin-bottom: 30px;
+                font-size: 28px;
+                line-height: 32px;
+            }
+        }
+
+        .cifra {
+            grid-template-columns: 290px;
+            grid-template-rows: 123px 123px 123px 123px 123px 123px;
+            gap: 15px;
+            margin-bottom: 60px;
+
+            .year,
+            .weight,
+            .procent,
+            .countries,
+            .grad,
+            .clients {
+
+                p {
+                    width: 220px;
+                    margin-left: 75px;
+                    text-transform: none;
+                    font-weight: 500;
+                    color: #BCC9DA;
+                    position: relative;
+
+                    &:first-child {
+                        margin-top: 24px;
+                        margin-bottom: 8px;
+                        font-size: 22px;
+                        line-height: 27px;
+                        color: #9FCCFF;
+                    }
+
+                    &:last-child {
+                        font-size: 13px;
+                        line-height: 20px;
+                        @include b2before;
+                    }
+                }
             }
         }
     }

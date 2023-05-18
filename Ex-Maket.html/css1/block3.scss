@@ -117,28 +117,346 @@
     background: none;
     background: url(../images1/fonKudaIsr.png) no-repeat top 280px right 0px;
 }
+
 .kudaVezem:has(ul li:nth-child(2):hover) {
     background: none;
     background: url(../images1/fonKudaHoll.png) no-repeat top 280px right 0px;
     transition-duration: 2s;
 }
+
 .kudaVezem:has(ul li:nth-child(3):hover) {
     background: none;
     background: url(../images1/fonKudaCl.png) no-repeat top 280px right 0px;
     transition-duration: 2s;
 }
+
 .kudaVezem:has(ul li:nth-child(4):hover) {
     background: none;
     background: url(../images1/fonKudaCol.png) no-repeat top 280px right 0px;
     transition-duration: 2s;
 }
+
 .kudaVezem:has(ul li:nth-child(5):hover) {
     background: none;
     background: url(../images1/fonKudaKe.png) no-repeat top 280px right 0px;
     transition-duration: 2s;
 }
+
 .kudaVezem:has(ul li:nth-child(6):hover) {
     background: none;
     background: url(../images1/fonKudaEcuador.png) no-repeat top 280px right 0px;
+    transition-duration: 2s;
+}
+
+// Медиа 1024
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 965px;
+    }
+
+    .block3 {
+        background: url(../images1/Fon_block3b1024.png) no-repeat top 100px right 80px,
+            url(../images1/Fon_block3a.png) no-repeat;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+
+    @mixin h2 {
+        font-size: 32px;
+        line-height: 42px;
+        color: #FFFFFF;
+    }
+
+    @keyframes animaBefore {
+        from {
+            left: -65px;
+        }
+
+        to {
+            left: -85px;
+        }
+    }
+
+    .otkudaVezem {
+        display: flex;
+
+        .vezem {
+            width: 410px;
+            margin-right: 0px;
+
+            p {
+
+                &:first-child {
+                    margin-top: 90px;
+                    font-size: 10px;
+                    line-height: 12px;
+                }
+
+                &:last-of-type {
+                    font-size: 13px;
+                    line-height: 24px;
+                    color: #BCC9DA;
+
+                    span {
+                        font-weight: 600px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+
+            h2 {
+                @include h2;
+                margin-top: 15px;
+                margin-bottom: 25px;
+            }
+
+            button {
+                margin-top: 40px;
+                margin-bottom: 100px;
+            }
+        }
+
+        .kudaVezem {
+            width: 565px;
+            background: url(../images1/fonKudaIsr1024.png) no-repeat top 270px right 0px;
+            display: flex;
+            justify-content: center;
+
+            ul {
+                width: 250px;
+                height: 400px;
+                transform-origin: 150px 150px;
+                transform: rotate(90deg);
+
+                li {
+                    margin-top: 50px;
+                    margin-left: 65px;
+                    text-transform: uppercase;
+                    position: relative;
+                    font-size: 10px;
+                    line-height: 24px;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background-color: #FFFFFF;
+                        width: 50px;
+                        height: 1px;
+                        top: 12px;
+                        left: -65px;
+                    }
+
+                    &:hover {
+                        margin-left: 85px;
+                        transition-duration: 2s;
+                        color: #227CE4;
+
+                        &::before {
+                            animation: animaBefore;
+                            transition-duration: 2s;
+                            width: 45%;
+                            left: -85px;
+                            background-color: #227CE4;
+                        }
+                    }
+
+                    &:nth-child(1) {
+                        margin-top: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .kudaVezem:has(ul li:first-child:hover) {
+        background: none;
+        background: url(../images1/fonKudaIsr1024.png) top 270px right 0px no-repeat;
+    }
+
+    .kudaVezem:has(ul li:nth-child(2):hover) {
+        background: none;
+        background: url(../images1/fonKudaHoll1024.png) no-repeat top 270px right 0px;
+        transition-duration: 2s;
+    }
+
+    .kudaVezem:has(ul li:nth-child(3):hover) {
+        background: none;
+        background: url(../images1/fonKudaCl1024.png) no-repeat top 270px right 0px;
+        transition-duration: 2s;
+    }
+
+    .kudaVezem:has(ul li:nth-child(4):hover) {
+        background: none;
+        background: url(../images1/fonKudaCol1024.png) no-repeat top 270px right 0px;
+        transition-duration: 2s;
+    }
+
+    .kudaVezem:has(ul li:nth-child(5):hover) {
+        background: none;
+        background: url(../images1/fonKudaKE1024.png) no-repeat top 270px right 0px;
+        transition-duration: 2s;
+    }
+
+    .kudaVezem:has(ul li:nth-child(6):hover) {
+        background: none;
+        background: url(../images1/fonKudaEcu1024.png) no-repeat top 270px right 0px;
+        transition-duration: 2s;
+    }
+}
+
+
+// Медиа 320
+
+@media screen and (max-width: 320px) {
+
+    .block3 {
+        background: none;
+        background: #16212E;
+
+        .container {
+            width: 290px;
+        }
+    }
+
+    @mixin h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    @keyframes animaBefore {
+        from {
+            left: -40px;
+        }
+
+        to {
+            left: -50px;
+        }
+    }
+
+    .otkudaVezem {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .vezem {
+            width: 290px;
+            margin-right: 0px;
+
+            p {
+                &:first-child {
+                    margin-top: 60px;
+                    font-size: 8px;
+                    line-height: 10px;
+                    text-align: center;
+                }
+
+                &:last-of-type {
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+            }
+
+            h2 {
+                @include h2;
+                margin-top: 10px;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+
+            button {
+                width: 290px;
+                height: 58px;
+                margin-top: 30px;
+                margin-bottom: 0px;
+            }
+        }
+
+        .kudaVezem {
+            width: 290px;
+            margin-bottom: 50px;
+            background: url(../images1/fonKudaIsr1024.png) no-repeat top 30px right -90px;
+
+            ul {
+                width: 290px;
+                height: 290px;
+                margin-top: 90px;
+                transform-origin: 150px 150px;
+                transform: rotate(-90deg);
+
+                li {
+                    margin-top:29px;
+                    margin-left: 0px;
+                    text-transform: uppercase;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background-color: #FFFFFF;
+                        width: 30px;
+                        height: 1px;
+                        top: 12px;
+                        left: -40px;
+                    }
+
+                    &:hover {
+                        margin-left: 10px;
+                        transition-duration: 2s;
+                        color: #227CE4;
+
+                        &::before {
+                            animation: animaBefore;
+                            transition-duration: 2s;
+                            width: 15%;
+                            left: -50px;
+                            background-color: #227CE4;
+                        }
+                    }
+
+                    &:nth-child(1) {
+                        margin-top: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.kudaVezem:has(ul li:first-child:hover) {
+    background: none;
+    background: url(../images1/fonKudaIsr1024.png) top 30px right -90px no-repeat;
+}
+
+.kudaVezem:has(ul li:nth-child(2):hover) {
+    background: none;
+    background: url(../images1/fonKudaHoll1024.png) no-repeat top 30px right -85px;
+    transition-duration: 2s;
+}
+
+.kudaVezem:has(ul li:nth-child(3):hover) {
+    background: none;
+    background: url(../images1/fonKudaCl1024.png) no-repeat top 30px right -170px;
+    transition-duration: 2s;
+}
+
+.kudaVezem:has(ul li:nth-child(4):hover) {
+    background: none;
+    background: url(../images1/fonKudaCol1024.png) no-repeat top 30px right -170px;
+    transition-duration: 2s;
+}
+
+.kudaVezem:has(ul li:nth-child(5):hover) {
+    background: none;
+    background: url(../images1/fonKudaKE1024.png) no-repeat top 30px right -90px;
+    transition-duration: 2s;
+}
+
+.kudaVezem:has(ul li:nth-child(6):hover) {
+    background: none;
+    background: url(../images1/fonKudaEcu1024.png) no-repeat top 30px right -170px;
     transition-duration: 2s;
 }

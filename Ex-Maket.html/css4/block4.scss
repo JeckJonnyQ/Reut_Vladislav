@@ -86,3 +86,92 @@
         }
     }
 }
+
+// Медиа 1024
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 965px;
+    }
+
+    .block4 {
+        background: url(../images4/Fon_block4a1024.png) no-repeat top 0px left 0px,
+            url(../images4/Fon_block4b1024.png) no-repeat top 0px left 567px,
+            url(../images4/Fon_block4c1024.png) no-repeat top 0px left 795px;
+    }
+
+    .zakazat {
+        width: 352px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 82px;
+
+
+        p:first-child {
+            margin-top: 85px;
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        h2 {
+            margin-top: 16px;
+            font-size: 32px;
+            line-height: 32px;
+        }
+
+        p:nth-child(3) {
+            margin-top: 7px;
+            margin-bottom: 80px;
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+
+    .forma {
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 416px;
+            margin-left: 62px;
+
+            input[type=text],
+            [type=tel] {
+                width: 390px;
+                height: 25px;
+                padding-left: 10px;
+                margin-right: 0px;
+                margin-top: 10px;
+                border: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+                background: transparent;
+                outline: none;
+
+                &:focus {
+                    border-bottom: 1px solid #FFFFFF;
+                    color: #FFFFFF;
+                }
+            }
+
+            input[type=checkbox]{
+                margin-top: 60px;
+            }
+
+            label {
+                width: 390px;
+                margin-top: 41px;
+                margin-left: 50px;
+                text-align: start;
+            }
+
+            .btn {
+                width: 260px;
+                margin: 60px 0px 85px 0px;
+            }
+        }
+    }
+}

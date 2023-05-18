@@ -45,7 +45,13 @@
             transition-timing-function: ease;
 
             .slider_image {
-                height: 255px;
+                display: flex;
+
+                img {
+                    &:first-child {
+                        margin-right: 31px;
+                    }
+                }
             }
         }
     }
@@ -70,7 +76,7 @@
 }
 
 
-.prev-next-btns{
+.prev-next-btns {
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -84,6 +90,7 @@
     height: 25px;
     top: -33px;
 }
+
 .next-btn {
     position: absolute;
     background: url(../images4/slayderNext.png) no-repeat;
@@ -92,9 +99,106 @@
     top: -20px;
 }
 
-.prev-btn:hover, .next-btn:hover {
+.prev-btn:hover,
+.next-btn:hover {
     cursor: pointer;
 }
+
 .next-btn {
     right: 0px;
+}
+
+
+// Медиа 1024
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 965px;
+    }
+
+    .block3 {
+        height: 835px;
+        background-size: cover;
+
+        p {
+            margin-top: 60px;
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 0px;
+            font-size: 32px;
+            line-height: 42px;
+        }
+    }
+
+
+    .block-for-slider {
+        width: 802px;
+        height: 540px;
+        margin-top: 40px;
+
+        .viewport {
+            width: 802px;
+            height: 540px;
+            margin-left: 110px;
+            overflow: hidden;
+
+            .slidewrapper {
+                display: flex;
+                transition: 1s;
+                transition-timing-function: ease;
+
+                .slider_image {
+                    margin-right: 53px;
+                    display: flex;
+                    flex-direction: column;
+
+                    img {
+                        &:first-child {
+                            margin-right: 0px;
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.nav-btns {
+    margin-left: 180px;
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: center;
+
+    .slide-nav-btn {
+        width: 20px;
+        height: 20px;
+        background-color: #23303F;
+        margin: 3px;
+
+        &:hover {
+            background-color: #227CE4;
+            cursor: pointer;
+        }
+    }
+}
+
+.prev-next-btns {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.prev-btn {
+    left: 110px;
+}
+
+.next-btn {
+    right: -55px;
 }

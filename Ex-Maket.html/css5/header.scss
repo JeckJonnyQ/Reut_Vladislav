@@ -112,3 +112,14 @@ header {
 .show {
     display: block;
 }
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 965px;
+    }
+
+    .head_logo {
+        margin-right: 70px;
+    }
+}

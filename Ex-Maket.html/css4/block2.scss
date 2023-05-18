@@ -1,6 +1,6 @@
 .block2 {
     background: url(../images4/Fon_block2a.png) no-repeat,
-                url(../images4/Fon_block2b.png) no-repeat top 420px right 0px;
+        url(../images4/Fon_block2b.png) no-repeat top 420px right 0px;
     background-color: #16212E;
     padding-top: 1px;
     padding-bottom: 1px;
@@ -13,9 +13,11 @@
     column-gap: 30px;
     row-gap: 60px;
     margin: 120px auto;
-    .map{
+
+    .map {
         grid-column: 2/4;
-        iframe{
+
+        iframe {
             position: relative;
             width: 1010px;
             height: 546px;
@@ -73,8 +75,9 @@
                 left: 120px;
             }
         }
-        &:nth-child(2){
-            &::before{
+
+        &:nth-child(2) {
+            &::before {
                 content: "";
                 position: absolute;
                 background: url(../images4/icon1.png) no-repeat;
@@ -86,10 +89,11 @@
         }
     }
 }
+
 .mail {
     p {
-        &:nth-child(2){
-            &::before{
+        &:nth-child(2) {
+            &::before {
                 content: "";
                 position: absolute;
                 background: url(../images4/icon2.png) no-repeat;
@@ -101,10 +105,11 @@
         }
     }
 }
+
 .adres {
     p {
-        &:nth-child(2){
-            &::before{
+        &:nth-child(2) {
+            &::before {
                 content: "";
                 position: absolute;
                 background: url(../images4/icon3.png) no-repeat;
@@ -116,6 +121,110 @@
         }
     }
 }
-.map{
+
+.map {
     grid-column: 2/4;
 }
+
+// Медиа 1024
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 965px;
+    }
+
+    .coordinates {
+        display: grid;
+        grid-template-columns: 310px 310px 310px;
+        grid-template-rows: 114px 344px;
+        column-gap: 17px;
+        row-gap: 30px;
+        margin: 60px auto;
+
+        .map {
+            iframe {
+                position: relative;
+                width: 637px;
+                height: 344px;
+            }
+        }
+
+        img {
+            width: 310px;
+            height: 344px;
+        }
+
+        .mail,
+        .telefon,
+        .adres {
+
+            p {
+                width: 300px;
+                margin-left: 75px;
+                font-size: 13px;
+                line-height: 22px;
+                position: relative;
+
+                &:nth-child(1) {
+                    margin-top: 11px;
+                    margin-bottom: 0px;
+                    font-size: 16px;
+
+                    &::before {
+                        left: -76px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    width: 240px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+
+    .telefon {
+        p {
+
+            &:nth-child(2) {
+                &::before {
+                    background-size: cover;
+                    width: 35px;
+                    height: 49px;
+                    top: -15px;
+                    left: -55px;
+                }
+            }
+        }
+    }
+
+    .mail {
+        p {
+            &:nth-child(2) {
+                &::before {
+                    background-size: cover;
+                    width: 35px;
+                    height: 49px;
+                    top: -15px;
+                    left: -55px;
+                }
+            }
+        }
+    }
+
+    .adres {
+        p {
+            &:nth-child(2) {
+                &::before {
+                    background-size: cover;
+                    width: 35px;
+                    height: 49px;
+                    top: -15px;
+                    left: -55px;
+                }
+            }
+        }
+    }
+}
+
+// Медиа 320

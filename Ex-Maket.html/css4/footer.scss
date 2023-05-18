@@ -1,17 +1,16 @@
 footer {
     background-color: #1A2633;
-    height: 130px;
 }
 
 .foot {
     display: flex;
     align-items: center;
+    height: 130px;
 
     .foot_logo {
         display: flex;
         align-items: center;
         margin-right: 133px;
-        height: 130px;
     }
 
     .foot_menu {
@@ -124,6 +123,75 @@ footer {
 
             &:last-child {
                 margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+
+// Медиа 1024
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 965px;
+    }
+
+    .foot {
+        height: 150px;
+
+        .foot_logo {
+            margin-right: 45px;
+        }
+
+        .foot_menu {
+            ul {
+                padding-top: 12px;
+                &:nth-child(1) {
+                    margin-right: 30px;
+                    width: 120px;
+                }
+
+                &:nth-child(2) {
+                    margin-right: 30px;
+                }
+
+                &:nth-child(3) {
+                    margin-right: 30px;
+
+                    li {
+                        padding-left: 0px;
+                        &:nth-child(1) {
+                            span {
+                                position: relative;
+
+                                &::before {
+                                    background: url(../images1/icon_tel.png) no-repeat;
+                                    background-size: cover;
+                                    width: 14px;
+                                    height: 14px;
+                                    left: -22px;
+                                }
+
+                                &::after {
+                                    background: url(../images1/icon_post.png) no-repeat;
+                                    background-size: cover;
+                                    width: 14px;
+                                    height: 10px;
+                                    left: -22px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(4) {
+                    li {
+                        a {
+                            font-size: 12px;
+                            line-height: 14px;
+                        }
+                    }
+                }
             }
         }
     }

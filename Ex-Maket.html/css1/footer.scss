@@ -1,6 +1,5 @@
 footer {
     background-color: #1A2633;
-    height: 130px;
 }
 
 .foot {
@@ -125,6 +124,229 @@ footer {
 
             &:last-child {
                 margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+// Медиа 1024
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 965px;
+    }
+
+    .foot {
+        height: 150px;
+
+        .foot_logo {
+            margin-right: 45px;
+        }
+
+        .foot_menu {
+            ul {
+                padding-top: 12px;
+
+                &:nth-child(1) {
+                    margin-right: 30px;
+                    width: 145px;
+                }
+
+                &:nth-child(2) {
+                    margin-right: 30px;
+                }
+
+                &:nth-child(3) {
+                    margin-right: 30px;
+
+                    li {
+                        padding-left: 18px;
+
+                        &:nth-child(1) {
+                            span {
+                                position: relative;
+
+                                &::before {
+                                    background: url(../images1/icon_tel.png) no-repeat;
+                                    background-size: cover;
+                                    width: 14px;
+                                    height: 14px;
+                                    left: -22px;
+                                }
+
+                                &::after {
+                                    background: url(../images1/icon_post.png) no-repeat;
+                                    background-size: cover;
+                                    width: 14px;
+                                    height: 10px;
+                                    left: -22px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(4) {
+                    li {
+                        a {
+                            font-size: 12px;
+                            line-height: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Медиа 320
+
+@media screen and (max-width: 320px) {
+
+    footer {
+        background-color: #1A2633;
+
+        .container {
+            width: 290px;
+
+            .foot {
+                width: 290px;
+                height: 334px;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+
+                .foot_logo {
+                    width: 290px;
+                    height: 100px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin-right: 0px;
+                }
+
+                .foot_menu {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    ul {
+                        width: 140px;
+
+                        &:nth-child(1) {
+                            margin-right: 0px;
+                            text-transform: uppercase;
+                            color: #BCC9DA;
+                            opacity: 0.8;
+
+                            li:nth-child(1) {
+                                margin-bottom: 10px;
+                            }
+                        }
+
+
+                        &:nth-child(2) {
+                            margin-right: 0px;
+                            text-transform: uppercase;
+                            color: #BCC9DA;
+                            opacity: 0.8;
+
+                            li:nth-child(1) {
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            margin-right: 0px;
+                            width: 290px;
+
+                            li {
+                                margin-bottom: 10px;
+                                padding-left: 32px;
+
+                                &:nth-child(1) {
+                                    span {
+                                        position: relative;
+
+                                        &::before {
+                                            content: '';
+                                            position: absolute;
+                                            background: url(../images1/icon_tel.png) no-repeat;
+                                            width: 16px;
+                                            height: 16px;
+                                            top: 3px;
+                                            left: -32px;
+                                        }
+
+                                        &::after {
+                                            content: '';
+                                            position: absolute;
+                                            background: url(../images1/icon_post.png) no-repeat;
+                                            width: 16px;
+                                            height: 12px;
+                                            top: 40px;
+                                            left: -32px;
+                                        }
+                                    }
+                                }
+
+                                a {
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                    color: #BCC9DA;
+                                }
+                            }
+                        }
+
+                        &:nth-child(4) {
+                            width: 290px;
+                            font-size: 14px;
+
+                            li {
+                                &:nth-child(1) {
+                                    margin-bottom: 10px;
+                                }
+
+                                a {
+                                    font-size: 12px;
+                                    line-height: 18px;
+                                    color: #BCC9DA;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .foot_menu {
+                width: 290px;
+
+                .contacts {
+                    margin-top: 0px;
+                    position: relative;
+
+                    &::before {
+                        display: none;
+                    }
+
+                    li {
+                        margin-bottom: 0px;
+
+                        p {
+                            display: inline;
+                            padding-left: 16px;
+                            font-weight: 300px;
+                            font-size: 14px;
+                            color: #BCC9DA;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
             }
         }
     }

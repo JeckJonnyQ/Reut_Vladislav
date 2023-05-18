@@ -91,3 +91,67 @@
 
 .map {
   grid-column: 2/4; }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 965px; }
+
+  .coordinates {
+    display: grid;
+    grid-template-columns: 310px 310px 310px;
+    grid-template-rows: 114px 344px;
+    -webkit-column-gap: 17px;
+            column-gap: 17px;
+    row-gap: 30px;
+    margin: 60px auto; }
+    .coordinates .map iframe {
+      position: relative;
+      width: 637px;
+      height: 344px; }
+    .coordinates img {
+      width: 310px;
+      height: 344px; }
+    .coordinates .mail p,
+    .coordinates .telefon p,
+    .coordinates .adres p {
+      width: 300px;
+      margin-left: 75px;
+      font-size: 13px;
+      line-height: 22px;
+      position: relative; }
+      .coordinates .mail p:nth-child(1),
+      .coordinates .telefon p:nth-child(1),
+      .coordinates .adres p:nth-child(1) {
+        margin-top: 11px;
+        margin-bottom: 0px;
+        font-size: 16px; }
+        .coordinates .mail p:nth-child(1)::before,
+        .coordinates .telefon p:nth-child(1)::before,
+        .coordinates .adres p:nth-child(1)::before {
+          left: -76px; }
+      .coordinates .mail p:nth-child(2),
+      .coordinates .telefon p:nth-child(2),
+      .coordinates .adres p:nth-child(2) {
+        width: 240px;
+        margin-bottom: 0px; }
+
+  .telefon p:nth-child(2)::before {
+    background-size: cover;
+    width: 35px;
+    height: 49px;
+    top: -15px;
+    left: -55px; }
+
+  .mail p:nth-child(2)::before {
+    background-size: cover;
+    width: 35px;
+    height: 49px;
+    top: -15px;
+    left: -55px; }
+
+  .adres p:nth-child(2)::before {
+    background-size: cover;
+    width: 35px;
+    height: 49px;
+    top: -15px;
+    left: -55px; } }

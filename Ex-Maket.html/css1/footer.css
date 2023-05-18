@@ -1,6 +1,5 @@
 footer {
-  background-color: #1A2633;
-  height: 130px; }
+  background-color: #1A2633; }
 
 .foot {
   display: -webkit-box;
@@ -91,3 +90,152 @@ footer {
       color: #BCC9DA; }
     .foot_menu .contacts li:last-child {
       margin-bottom: 0px; }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 965px; }
+
+  .foot {
+    height: 150px; }
+    .foot .foot_logo {
+      margin-right: 45px; }
+    .foot .foot_menu ul {
+      padding-top: 12px; }
+      .foot .foot_menu ul:nth-child(1) {
+        margin-right: 30px;
+        width: 145px; }
+      .foot .foot_menu ul:nth-child(2) {
+        margin-right: 30px; }
+      .foot .foot_menu ul:nth-child(3) {
+        margin-right: 30px; }
+        .foot .foot_menu ul:nth-child(3) li {
+          padding-left: 18px; }
+          .foot .foot_menu ul:nth-child(3) li:nth-child(1) span {
+            position: relative; }
+            .foot .foot_menu ul:nth-child(3) li:nth-child(1) span::before {
+              background: url(../images1/icon_tel.png) no-repeat;
+              background-size: cover;
+              width: 14px;
+              height: 14px;
+              left: -22px; }
+            .foot .foot_menu ul:nth-child(3) li:nth-child(1) span::after {
+              background: url(../images1/icon_post.png) no-repeat;
+              background-size: cover;
+              width: 14px;
+              height: 10px;
+              left: -22px; }
+      .foot .foot_menu ul:nth-child(4) li a {
+        font-size: 12px;
+        line-height: 14px; } }
+@media screen and (max-width: 320px) {
+  footer {
+    background-color: #1A2633; }
+    footer .container {
+      width: 290px; }
+      footer .container .foot {
+        width: 290px;
+        height: 334px;
+        margin: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: start; }
+        footer .container .foot .foot_logo {
+          width: 290px;
+          height: 100px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          margin-right: 0px; }
+        footer .container .foot .foot_menu {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+          footer .container .foot .foot_menu ul {
+            width: 140px; }
+            footer .container .foot .foot_menu ul:nth-child(1) {
+              margin-right: 0px;
+              text-transform: uppercase;
+              color: #BCC9DA;
+              opacity: 0.8; }
+              footer .container .foot .foot_menu ul:nth-child(1) li:nth-child(1) {
+                margin-bottom: 10px; }
+            footer .container .foot .foot_menu ul:nth-child(2) {
+              margin-right: 0px;
+              text-transform: uppercase;
+              color: #BCC9DA;
+              opacity: 0.8; }
+              footer .container .foot .foot_menu ul:nth-child(2) li:nth-child(1) {
+                margin-bottom: 10px; }
+            footer .container .foot .foot_menu ul:nth-child(3) {
+              margin-right: 0px;
+              width: 290px; }
+              footer .container .foot .foot_menu ul:nth-child(3) li {
+                margin-bottom: 10px;
+                padding-left: 32px; }
+                footer .container .foot .foot_menu ul:nth-child(3) li:nth-child(1) span {
+                  position: relative; }
+                  footer .container .foot .foot_menu ul:nth-child(3) li:nth-child(1) span::before {
+                    content: '';
+                    position: absolute;
+                    background: url(../images1/icon_tel.png) no-repeat;
+                    width: 16px;
+                    height: 16px;
+                    top: 3px;
+                    left: -32px; }
+                  footer .container .foot .foot_menu ul:nth-child(3) li:nth-child(1) span::after {
+                    content: '';
+                    position: absolute;
+                    background: url(../images1/icon_post.png) no-repeat;
+                    width: 16px;
+                    height: 12px;
+                    top: 40px;
+                    left: -32px; }
+                footer .container .foot .foot_menu ul:nth-child(3) li a {
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 24px;
+                  color: #BCC9DA; }
+            footer .container .foot .foot_menu ul:nth-child(4) {
+              width: 290px;
+              font-size: 14px; }
+              footer .container .foot .foot_menu ul:nth-child(4) li:nth-child(1) {
+                margin-bottom: 10px; }
+              footer .container .foot .foot_menu ul:nth-child(4) li a {
+                font-size: 12px;
+                line-height: 18px;
+                color: #BCC9DA; }
+      footer .container .foot_menu {
+        width: 290px; }
+        footer .container .foot_menu .contacts {
+          margin-top: 0px;
+          position: relative; }
+          footer .container .foot_menu .contacts::before {
+            display: none; }
+          footer .container .foot_menu .contacts li {
+            margin-bottom: 0px; }
+            footer .container .foot_menu .contacts li p {
+              display: inline;
+              padding-left: 16px;
+              font-weight: 300px;
+              font-size: 14px;
+              color: #BCC9DA; }
+            footer .container .foot_menu .contacts li:last-child {
+              margin-bottom: 0px; } }

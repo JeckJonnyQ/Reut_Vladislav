@@ -207,3 +207,95 @@
     height: 53px;
     top: -25px;
     left: 202px; }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 965px; }
+
+  .block2 {
+    background: url(../images2/Fon_block2b.png) no-repeat left -400px top 25px;
+    background-color: #16212E;
+    padding-top: 1px;
+    padding-bottom: 1px; }
+    .block2 h2 {
+      width: 672px;
+      margin: 60px auto 0px;
+      font-size: 32px; }
+
+  .pomog_brok .carta {
+    margin-top: 120px;
+    margin-left: 75px; }
+    .pomog_brok .carta p {
+      font-size: 14px;
+      line-height: 22px; }
+      .pomog_brok .carta p:nth-child(1) {
+        top: 270px;
+        left: -70px; }
+        .pomog_brok .carta p:nth-child(1) span {
+          position: relative; }
+          .pomog_brok .carta p:nth-child(1) span::after {
+            left: 30px;
+            top: -100px; }
+
+  .shagi {
+    display: grid;
+    grid-template-columns: 360px;
+    grid-template-rows: 130px 130px 130px 130px;
+    gap: 20px;
+    margin-bottom: 60px;
+    margin-top: 30px; }
+    .shagi .shag1 p,
+    .shagi .shag2 p,
+    .shagi .shag3 p,
+    .shagi .shag4 p {
+      width: 260px;
+      font-size: 13px; }
+      .shagi .shag1 p:first-child,
+      .shagi .shag2 p:first-child,
+      .shagi .shag3 p:first-child,
+      .shagi .shag4 p:first-child {
+        margin-top: 23px;
+        font-size: 25px;
+        line-height: 30px; }
+      .shagi .shag1 p:last-child,
+      .shagi .shag2 p:last-child,
+      .shagi .shag3 p:last-child,
+      .shagi .shag4 p:last-child {
+        width: 290px;
+        margin-top: 10px; }
+        .shagi .shag1 p:last-child::before,
+        .shagi .shag2 p:last-child::before,
+        .shagi .shag3 p:last-child::before,
+        .shagi .shag4 p:last-child::before {
+          top: 0px; }
+
+  .shag1 p {
+    position: relative; }
+    .shag1 p:first-child::after {
+      width: 66px;
+      height: 76px;
+      top: -10px;
+      left: 240px; }
+
+  .shag2 p {
+    position: relative; }
+    .shag2 p:first-child {
+      margin-top: 34px; }
+      .shag2 p:first-child::after {
+        width: 83px;
+        top: -10px;
+        left: 225px; }
+
+  .shag3 p {
+    position: relative; }
+    .shag3 p:first-child::after {
+      width: 85px;
+      height: 53px;
+      top: -10px;
+      left: 225px; }
+
+  .shag4 p {
+    position: relative; }
+    .shag4 p:first-child::after {
+      top: -10px;
+      left: 215px; } }

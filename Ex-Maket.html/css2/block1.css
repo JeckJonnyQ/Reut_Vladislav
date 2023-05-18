@@ -31,3 +31,21 @@
         top: 115px;
         left: 235px;
         color: #FFFFFF; }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 965px; }
+
+  .block1 p {
+    margin-top: 132px;
+    font-size: 12px;
+    line-height: 12px; }
+  .block1 h2 {
+    margin-top: 10px;
+    margin-bottom: 133px;
+    font-size: 32px; }
+    .block1 h2 span {
+      position: relative; }
+      .block1 h2 span::before {
+        top: 65px;
+        left: 90px; } }

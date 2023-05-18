@@ -3,6 +3,11 @@ header {
   background-color: #1A2633;
   height: 70px; }
 
+.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,3 +108,23 @@ header {
 выпадающего списка) */
 .show {
   display: block; }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 965px; }
+
+  .head .head_logo {
+    margin-right: 70px; } }
+@media screen and (max-width: 320px) {
+  .container {
+    width: 290px; } }
+@-webkit-keyframes burgerAnimation {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes burgerAnimation {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }

@@ -36,7 +36,7 @@
 
     to {
         transform: rotate(360deg) translateX(210px) rotate(-360deg);
-        
+
     }
 }
 
@@ -64,8 +64,8 @@
             top: 203px;
             left: 203px;
         }
-        
-        &:before{
+
+        &:before {
             display: initial;
             animation: spin 18s infinite linear;
         }
@@ -260,6 +260,146 @@
                 height: 53px;
                 top: -25px;
                 left: 202px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 965px;
+    }
+
+    .block2 {
+        background: url(../images2/Fon_block2b.png) no-repeat left -400px top 25px;
+        background-color: #16212E;
+        padding-top: 1px;
+        padding-bottom: 1px;
+
+        h2 {
+            width: 672px;
+            margin: 60px auto 0px;
+            font-size: 32px;
+        }
+    }
+
+    @mixin b2before {
+        &::before {
+            top: 0px;
+        }
+    }
+
+    .pomog_brok {
+        .carta {
+            margin-top: 120px;
+            margin-left: 75px;
+
+            p {
+                font-size: 14px;
+                line-height: 22px;
+
+                &:nth-child(1) {
+                    top: 270px;
+                    left: -70px;
+
+                    span {
+                        position: relative;
+                        &::after {
+                            left: 30px;
+                            top: -100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .shagi {
+        display: grid;
+        grid-template-columns: 360px;
+        grid-template-rows: 130px 130px 130px 130px;
+        gap: 20px;
+        margin-bottom: 60px;
+        margin-top: 30px;
+
+        .shag1,
+        .shag2,
+        .shag3,
+        .shag4 {
+            p {
+                width: 260px;
+                font-size: 13px;
+
+                &:first-child {
+                    margin-top: 23px;
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+
+                &:last-child {
+                    width: 290px;
+                    margin-top: 10px;
+                    @include b2before;
+                }
+            }
+        }
+    }
+
+    .shag1 {
+        p {
+            position: relative;
+
+            &:first-child {
+                &::after {
+                    width: 66px;
+                    height: 76px;
+                    top: -10px;
+                    left: 240px;
+                }
+            }
+        }
+    }
+
+    .shag2 {
+        p {
+            position: relative;
+
+            &:first-child {
+                margin-top: 34px;
+
+                &::after {
+                    width: 83px;
+                    top: -10px;
+                    left: 225px;
+                }
+            }
+        }
+    }
+
+    .shag3 {
+        p {
+            position: relative;
+
+            &:first-child {
+                &::after {
+                    width: 85px;
+                    height: 53px;
+                    top: -10px;
+                    left: 225px;
+                }
+            }
+        }
+    }
+
+    .shag4 {
+        p {
+            position: relative;
+
+            &:first-child {
+                &::after {
+                    top: -10px;
+                    left: 215px;
+                }
             }
         }
     }

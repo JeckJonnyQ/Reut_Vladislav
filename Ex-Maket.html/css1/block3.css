@@ -120,3 +120,255 @@
   background: url(../images1/fonKudaEcuador.png) no-repeat top 280px right 0px;
   -webkit-transition-duration: 2s;
           transition-duration: 2s; }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 965px; }
+
+  .block3 {
+    background: url(../images1/Fon_block3b1024.png) no-repeat top 100px right 80px, url(../images1/Fon_block3a.png) no-repeat;
+    padding-top: 1px;
+    padding-bottom: 1px; }
+
+  @-webkit-keyframes animaBefore {
+    from {
+      left: -65px; }
+    to {
+      left: -85px; } }
+
+  @keyframes animaBefore {
+    from {
+      left: -65px; }
+    to {
+      left: -85px; } }
+  .otkudaVezem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .otkudaVezem .vezem {
+      width: 410px;
+      margin-right: 0px; }
+      .otkudaVezem .vezem p:first-child {
+        margin-top: 90px;
+        font-size: 10px;
+        line-height: 12px; }
+      .otkudaVezem .vezem p:last-of-type {
+        font-size: 13px;
+        line-height: 24px;
+        color: #BCC9DA; }
+        .otkudaVezem .vezem p:last-of-type span {
+          font-weight: 600px;
+          color: #FFFFFF; }
+      .otkudaVezem .vezem h2 {
+        font-size: 32px;
+        line-height: 42px;
+        color: #FFFFFF;
+        margin-top: 15px;
+        margin-bottom: 25px; }
+      .otkudaVezem .vezem button {
+        margin-top: 40px;
+        margin-bottom: 100px; }
+    .otkudaVezem .kudaVezem {
+      width: 565px;
+      background: url(../images1/fonKudaIsr1024.png) no-repeat top 270px right 0px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .otkudaVezem .kudaVezem ul {
+        width: 250px;
+        height: 400px;
+        -webkit-transform-origin: 150px 150px;
+                transform-origin: 150px 150px;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg); }
+        .otkudaVezem .kudaVezem ul li {
+          margin-top: 50px;
+          margin-left: 65px;
+          text-transform: uppercase;
+          position: relative;
+          font-size: 10px;
+          line-height: 24px; }
+          .otkudaVezem .kudaVezem ul li::before {
+            content: '';
+            position: absolute;
+            background-color: #FFFFFF;
+            width: 50px;
+            height: 1px;
+            top: 12px;
+            left: -65px; }
+          .otkudaVezem .kudaVezem ul li:hover {
+            margin-left: 85px;
+            -webkit-transition-duration: 2s;
+                    transition-duration: 2s;
+            color: #227CE4; }
+            .otkudaVezem .kudaVezem ul li:hover::before {
+              -webkit-animation: animaBefore;
+                      animation: animaBefore;
+              -webkit-transition-duration: 2s;
+                      transition-duration: 2s;
+              width: 45%;
+              left: -85px;
+              background-color: #227CE4; }
+          .otkudaVezem .kudaVezem ul li:nth-child(1) {
+            margin-top: 0px; }
+
+  .kudaVezem:has(ul li:first-child:hover) {
+    background: none;
+    background: url(../images1/fonKudaIsr1024.png) top 270px right 0px no-repeat; }
+
+  .kudaVezem:has(ul li:nth-child(2):hover) {
+    background: none;
+    background: url(../images1/fonKudaHoll1024.png) no-repeat top 270px right 0px;
+    -webkit-transition-duration: 2s;
+            transition-duration: 2s; }
+
+  .kudaVezem:has(ul li:nth-child(3):hover) {
+    background: none;
+    background: url(../images1/fonKudaCl1024.png) no-repeat top 270px right 0px;
+    -webkit-transition-duration: 2s;
+            transition-duration: 2s; }
+
+  .kudaVezem:has(ul li:nth-child(4):hover) {
+    background: none;
+    background: url(../images1/fonKudaCol1024.png) no-repeat top 270px right 0px;
+    -webkit-transition-duration: 2s;
+            transition-duration: 2s; }
+
+  .kudaVezem:has(ul li:nth-child(5):hover) {
+    background: none;
+    background: url(../images1/fonKudaKE1024.png) no-repeat top 270px right 0px;
+    -webkit-transition-duration: 2s;
+            transition-duration: 2s; }
+
+  .kudaVezem:has(ul li:nth-child(6):hover) {
+    background: none;
+    background: url(../images1/fonKudaEcu1024.png) no-repeat top 270px right 0px;
+    -webkit-transition-duration: 2s;
+            transition-duration: 2s; } }
+@media screen and (max-width: 320px) {
+  .block3 {
+    background: none;
+    background: #16212E; }
+    .block3 .container {
+      width: 290px; }
+
+  @-webkit-keyframes animaBefore {
+    from {
+      left: -40px; }
+    to {
+      left: -50px; } }
+
+  @keyframes animaBefore {
+    from {
+      left: -40px; }
+    to {
+      left: -50px; } }
+  .otkudaVezem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .otkudaVezem .vezem {
+      width: 290px;
+      margin-right: 0px; }
+      .otkudaVezem .vezem p:first-child {
+        margin-top: 60px;
+        font-size: 8px;
+        line-height: 10px;
+        text-align: center; }
+      .otkudaVezem .vezem p:last-of-type {
+        font-size: 13px;
+        line-height: 20px; }
+      .otkudaVezem .vezem h2 {
+        font-size: 28px;
+        line-height: 32px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-align: center; }
+      .otkudaVezem .vezem button {
+        width: 290px;
+        height: 58px;
+        margin-top: 30px;
+        margin-bottom: 0px; }
+    .otkudaVezem .kudaVezem {
+      width: 290px;
+      margin-bottom: 50px;
+      background: url(../images1/fonKudaIsr1024.png) no-repeat top 30px right -90px; }
+      .otkudaVezem .kudaVezem ul {
+        width: 290px;
+        height: 290px;
+        margin-top: 90px;
+        -webkit-transform-origin: 150px 150px;
+                transform-origin: 150px 150px;
+        -webkit-transform: rotate(-90deg);
+                transform: rotate(-90deg); }
+        .otkudaVezem .kudaVezem ul li {
+          margin-top: 29px;
+          margin-left: 0px;
+          text-transform: uppercase;
+          position: relative; }
+          .otkudaVezem .kudaVezem ul li::before {
+            content: '';
+            position: absolute;
+            background-color: #FFFFFF;
+            width: 30px;
+            height: 1px;
+            top: 12px;
+            left: -40px; }
+          .otkudaVezem .kudaVezem ul li:hover {
+            margin-left: 10px;
+            -webkit-transition-duration: 2s;
+                    transition-duration: 2s;
+            color: #227CE4; }
+            .otkudaVezem .kudaVezem ul li:hover::before {
+              -webkit-animation: animaBefore;
+                      animation: animaBefore;
+              -webkit-transition-duration: 2s;
+                      transition-duration: 2s;
+              width: 15%;
+              left: -50px;
+              background-color: #227CE4; }
+          .otkudaVezem .kudaVezem ul li:nth-child(1) {
+            margin-top: 0px; } }
+.kudaVezem:has(ul li:first-child:hover) {
+  background: none;
+  background: url(../images1/fonKudaIsr1024.png) top 30px right -90px no-repeat; }
+
+.kudaVezem:has(ul li:nth-child(2):hover) {
+  background: none;
+  background: url(../images1/fonKudaHoll1024.png) no-repeat top 30px right -85px;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s; }
+
+.kudaVezem:has(ul li:nth-child(3):hover) {
+  background: none;
+  background: url(../images1/fonKudaCl1024.png) no-repeat top 30px right -170px;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s; }
+
+.kudaVezem:has(ul li:nth-child(4):hover) {
+  background: none;
+  background: url(../images1/fonKudaCol1024.png) no-repeat top 30px right -170px;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s; }
+
+.kudaVezem:has(ul li:nth-child(5):hover) {
+  background: none;
+  background: url(../images1/fonKudaKE1024.png) no-repeat top 30px right -90px;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s; }
+
+.kudaVezem:has(ul li:nth-child(6):hover) {
+  background: none;
+  background: url(../images1/fonKudaEcu1024.png) no-repeat top 30px right -170px;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s; }

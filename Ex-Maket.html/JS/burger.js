@@ -1,5 +1,5 @@
- document.querySelector('.burger').addEventListener('.click', function() {
-    this.classList.toggle('active');
-    document.querySelector('.head').classList.toggle('open');
- })
-
+$(document).ready(function() {
+   $('.burger').click(function(event) {
+      $('.burger, ul').toggleClass('active');
+   })
+})

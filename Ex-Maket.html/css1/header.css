@@ -1,52 +1,49 @@
 @charset "UTF-8";
 header {
   background-color: #1A2633;
-  height: 70px; }
-
-.open {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right; }
-  .head ul {
+  height: 70px;
+  width: 100%; }
+  header .head {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .head ul li {
-      position: relative;
-      width: 120px;
-      text-align: center;
-      text-transform: uppercase;
-      margin-right: 60px; }
-      .head ul li::before {
-        content: "";
-        width: 1px;
-        height: 0px;
-        position: absolute;
-        background-color: #227CE4;
-        top: 25px;
-        left: 60px;
-        -webkit-transition-property: height, width;
-        transition-property: height, width;
-        -webkit-transition-duration: 0.5s;
-                transition-duration: 0.5s; }
-      .head ul li:hover::before {
-        height: 75%; }
-      .head ul li:nth-child(4) {
-        margin-right: 64px; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right; }
+    header .head ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      header .head ul li {
+        position: relative;
+        width: 120px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-right: 60px; }
+        header .head ul li::before {
+          content: "";
+          width: 1px;
+          height: 0px;
+          position: absolute;
+          background-color: #227CE4;
+          top: 25px;
+          left: 60px;
+          -webkit-transition-property: height, width;
+          transition-property: height, width;
+          -webkit-transition-duration: 0.5s;
+                  transition-duration: 0.5s; }
+        header .head ul li:hover::before {
+          height: 75%; }
+        header .head ul li:nth-child(4) {
+          margin-right: 64px; }
+        header .head ul li .burger {
+          display: none; }
 
 .head_logo {
   display: -webkit-box;
@@ -112,19 +109,108 @@ header {
 @media screen and (max-width: 1024px) {
   .container {
     width: 965px; }
-
-  .head .head_logo {
-    margin-right: 70px; } }
+    .container .head .head_logo {
+      margin-right: 70px; } }
 @media screen and (max-width: 320px) {
-  .container {
-    width: 290px; } }
-@-webkit-keyframes burgerAnimation {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@keyframes burgerAnimation {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+  header {
+    height: 56px; }
+    header .container {
+      width: 290px; }
+      header .container .head {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 290px;
+        height: 56px; }
+        header .container .head ul {
+          position: fixed;
+          background-color: #1A2633;
+          top: -100%;
+          left: 0;
+          width: 320px;
+          height: 325px;
+          z-index: 2;
+          padding: 80px 0 0 0;
+          display: block;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-transition: all 1s easy 0s;
+          transition: all 1s easy 0s; }
+          header .container .head ul li {
+            margin-right: 0px;
+            margin-bottom: 20px;
+            width: 100%; }
+        header .container .head ul.active {
+          top: 0; }
+        header .container .head .head_logo {
+          height: 56px;
+          margin-right: 85px;
+          z-index: 3; }
+          header .container .head .head_logo img {
+            width: 81px;
+            height: 32px; }
+        header .container .head .burger {
+          display: block;
+          position: relative;
+          width: 30px;
+          height: 20px;
+          z-index: 3; }
+          header .container .head .burger::before, header .container .head .burger:after {
+            content: '';
+            position: absolute;
+            background-color: #FFFFFF;
+            width: 30px;
+            height: 2px;
+            -webkit-transition: all 0.3s easy 0s;
+            transition: all 0.3s easy 0s; }
+          header .container .head .burger::before {
+            top: 0; }
+          header .container .head .burger::after {
+            bottom: 0; }
+          header .container .head .burger span {
+            position: absolute;
+            background-color: #FFFFFF;
+            left: 0;
+            top: 9px;
+            width: 25px;
+            height: 2px;
+            -webkit-transition: all 0.3s easy 0s;
+            transition: all 0.3s easy 0s; }
+        header .container .head .dropbtn {
+          width: 32px;
+          height: 32px;
+          padding: 3px;
+          font-size: 12px;
+          z-index: 3; }
+        header .container .head .dropdown-content {
+          max-width: 32px;
+          z-index: 5; }
+        header .container .head .dropdown-content a {
+          color: #fff;
+          text-align: center;
+          padding: 8px;
+          text-decoration: none;
+          display: block;
+          z-index: 5; }
+          header .container .head .dropdown-content a:nth-child(2) {
+            padding: 8px 2px; } }
+.burger.active::before {
+  -webkit-transform: translate(0, 50%) rotate(45deg);
+          transform: translate(0, 50%) rotate(45deg);
+  top: 50%; }
+
+.burger.active::after {
+  -webkit-transform: translate(0, 50%) rotate(-45deg);
+          transform: translate(0, 50%) rotate(-45deg);
+  bottom: 50%; }
+
+.burger.active span {
+  -webkit-transform: scale(0);
+          transform: scale(0); }
